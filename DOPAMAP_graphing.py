@@ -109,8 +109,55 @@ included_regions = ["Motor areas", "Somatosensory areas", "Gustatory and viscera
                     "Hypothalamic medial zone", "Hypothalamic lateral zone"]
 included_columns = ["ID", "age", "sex", *included_regions]
 
+
+## define outliers
+
+outliers_D1R = {
+    "C19": ["Motor areas"], 
+    "E15": ["Somatosensory areas"], 
+    "C68": ["Prefrontal areas"],
+    "C53": ["Prefrontal areas"], 
+    "C108": ["Retrosplenial areas"], 
+    "D13": ["Thalamus, sensory-motor cortex related"],
+    "E62": ["Thalamus, sensory-motor cortex related", "Thalamus, polymodal association cortex related", "Hypothalamic medial zone"],
+    "C45": ["Striatum-like amygdalar areas", "Hypothalamic medial zone"],
+    "C17": ["Hippocampal region", "Hypothalamic medial zone"]
+    }
+
+outliers_D2R = {
+    "D166": ["Motor areas"],
+    "D235": ["Gustatory and visceral areas"],
+    "D123": ["Anterior cingulate areas"],
+    "D143": ["Olfactory areas"],
+    "D157": ["Pallidum"],
+    "D197": ["Hypothalamic medial zone", "Hypothalamic lateral zone"],
+    "D146": ["Hypothalamic medial zone", "Hypothalamic lateral zone"]
+    }
+
+## remove outliers from selected data
 selected_D1_data = D1R_densities_hier[included_columns]
+selected_D1_data = selected_D1_data.set_index("ID")
+
 selected_D2_data = D2R_densities_hier[included_columns]
+selected_D2_data = selected_D2_data.set_index("ID")
+
+outlier_dicts = [outliers_D1R, outliers_D2R]
+dfs = [selected_D1_data, selected_D2_data]
+
+
+for outlier_dict, df in zip(outlier_dicts, dfs):
+        
+    for key in outlier_dict:
+        excluded_regions = outlier_dict.get(key)
+    
+        for region in excluded_regions:
+            df.loc[key, region] = np.nan
+        
+        
+selected_D1_data = selected_D1_data.reset_index()
+selected_D2_data = selected_D2_data.reset_index()
+
+## get means for each age group and sex
 
 grouped_D1_data = selected_D1_data.groupby(["age", "sex"]).mean()
 grouped_D2_data = selected_D2_data.groupby(["age", "sex"]).mean()
@@ -152,7 +199,7 @@ D2_female_sem_df = pd.DataFrame([D2R_hier_f17_sem, D2R_hier_f25_sem, D2R_hier_f3
 
 ############ GRAPHING
 
-import graphing_functions as grf
+import nutil_scripts.graphing_functions as grf
 from matplotlib.pyplot import figure  
 from mpl_toolkits.mplot3d import Axes3D
 
