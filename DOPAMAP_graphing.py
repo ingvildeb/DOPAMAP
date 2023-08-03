@@ -215,16 +215,11 @@ for n, region in enumerate(included_regions):
 
 
     plt.errorbar(ages, D1_female_df[region].values, label = "D1R female", marker='s', linewidth = 2.5, ls = '-', c = '#dc582a', yerr = D1_female_sem_df[region].values, elinewidth = 1)
-    plt.errorbar(ages, D1_male_df[region].values, label = "D1R male", marker='o', linewidth = 2.5, ls = '--', c = '#dc582a', yerr = D1_male_sem_df[region].values, elinewidth = 1)
-    plt.errorbar(ages, D2_female_df[region].values, label = "D2R female", marker='s', linewidth = 2.5, ls = '-', c = '#003b49', yerr = D2_female_sem_df[region].values, elinewidth = 1)
+    plt.errorbar(ages, D1_male_df[region].values, label = "D1R male", marker='s', linewidth = 2.5, ls = '-', c = '#003b49', yerr = D1_male_sem_df[region].values, elinewidth = 1)
+    plt.errorbar(ages, D2_female_df[region].values, label = "D2R female", marker='o', linewidth = 2.5, ls = '--', c = '#dc582a', yerr = D2_female_sem_df[region].values, elinewidth = 1)
     plt.errorbar(ages, D2_male_df[region].values, label = "D2R male", marker='o', linewidth = 2.5, ls = '--', c = '#003b49', yerr = D2_male_sem_df[region].values, elinewidth = 1)
     
-#    if region == "Striatum":
-#        plt.ylim(0, 40000)
-#    
-#    else:
-#        plt.ylim(0,17000)
-    
+   
     # chart formatting
     ax.set_title(region.upper())
 

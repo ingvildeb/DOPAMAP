@@ -181,7 +181,7 @@ D2R_hierarchical_densities_count = (D2R_hierarchical_densities.groupby("age").co
 ### Calculate ratios
 
 
-def calculate_ratio(df1, df2, countdf1 = '', countdf2 = '', countfilter = "yes", count_lim = 3):
+def calculate_ratio(df1, df2, countdf1 = '', countdf2 = '', countfilter = "yes", count_lim = 0):
     ratio = (df1 / df2)
     
     if countfilter == "yes":
