@@ -13,6 +13,9 @@ import nutil_scripts.graphing_functions as ngf
 ###########################################################################################################################
 
 ## Set up paths
+
+derived_data_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\\"
+
 D1R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_densities.xlsx"
 D1R_totals_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_total_numbers.xlsx"
 D1R_cell_sizes_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_cell_pixels.xlsx"
@@ -79,32 +82,24 @@ D2R_hierarchical_cell_sizes.to_excel("D2R_hierarchical_cell_sizes.xlsx")
 
 
 
-
-
-
-
-
-
-
-## Get and save descriptive statistics
-
-def get_descriptive_statistics(densityfile, totalfile, cellsizefile, filesuffix = ""):
-
-    densities_descriptives_by_age = densityfile.groupby("age").describe()
-    totals_descriptives_by_age = totalfile.groupby("age").describe()
-    cell_sizes_descriptives_by_age = cellsizefile.groupby("age").describe()
-    
-    with pd.ExcelWriter(r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\descriptive_statistics_" + filesuffix + ".xlsx") as writer:
-        densities_descriptives_by_age.to_excel(writer, sheet_name = "Densities_by_age")
-        totals_descriptives_by_age.to_excel(writer, sheet_name = "Totals_by_age")
-        cell_sizes_descriptives_by_age.to_excel(writer, sheet_name = "Cellsizes_by_age")
+## Get and save descriptive statistics     
         
 
-get_descriptive_statistics(D1R_densities, D1R_totals, D1R_cell_sizes, filesuffix = "D1R")
-get_descriptive_statistics(D2R_densities, D2R_totals, D2R_cell_sizes, filesuffix = "D2R")
 
-get_descriptive_statistics(D1R_hierarchical_densities, D1R_hierarchical_totals, D1R_hierarchical_cell_sizes, filesuffix = "hierarchical_D1R")
-get_descriptive_statistics(D2R_hierarchical_densities, D2R_hierarchical_totals, D2R_hierarchical_cell_sizes, filesuffix = "hierarchical_D2R")
+
+data_dfs = [D1R_densities, D1R_totals, D1R_cell_sizes, D2R_densities, D2R_totals, D2R_cell_sizes, D1R_hierarchical_densities, D1R_hierarchical_totals, D1R_hierarchical_cell_sizes,
+            D2R_hierarchical_densities, D2R_hierarchical_totals, D2R_hierarchical_cell_sizes]
+   
+    
+output_names = ["D1R_densities", "D1R_totals", "D1R_cell_sizes", "D2R_densities", "D2R_totals", "D2R_cell_sizes", "D1R_hierarchical_densities", "D1R_hierarchical_totals", 
+                "D1R_hierarchical_cell_sizes", "D2R_hierarchical_densities", "D2R_hierarchical_totals", "D2R_hierarchical_cell_sizes"]
+
+for data_df, output_name in zip(data_dfs, output_names):
+    ngf.get_descriptive_statistics(data_df, derived_data_path + output_name + "_perAge", grouping = ["age"])
+
+for data_df, output_name in zip(data_dfs, output_names):
+    ngf.get_descriptive_statistics(data_df, derived_data_path + output_name + "_perAgeAndSex", grouping = ["age", "sex"])
+
 
 
 ## Get counts and mean values per age group
