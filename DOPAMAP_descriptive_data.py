@@ -7,7 +7,7 @@ Created on Wed Jan 25 09:29:51 2023
 
 import pandas as pd
 import numpy as np
-
+import nutil_scripts.graphing_functions as ngf
 
 
 ###########################################################################################################################
@@ -51,81 +51,39 @@ medium_hier_regs = (read_customregs['Hierarchy_medium'].unique()).tolist()
 regions_to_hierarchy_dict = dict(zip(read_customregs['Region name'], read_customregs['Hierarchy']))
 
 
-
-#medium_hierarchy_dict = dict(zip(read_customregs['Region name'], read_customregs['Hierarchy_medium']))
-#medium_to_major_dict = dict(zip(read_customregs['Hierarchy_medium'], read_customregs['Hierarchy_major']))
-
-
-
 ###########################################################################################################################
 
-## Summarize densities by hierarchy
+## Summarize data by hierarchy
 
-
-def group_data_by_hierarchy(datafile, hreg_list, reg_to_hreg_dict, id_column_list = []):
-    
-    hierarchy_dict = {}
-    df_list = []
-    nan_list = []
-    num_regions_list = []
-    
-    for hreg in hreg_list:
-        included_regions = [k for k,v in reg_to_hreg_dict.items() if v == hreg]
-        hierarchy_dict[hreg] = included_regions    
-        
-        nan_count = datafile[hierarchy_dict[hreg]].isna().sum(axis=1)
-        avg_value = datafile[hierarchy_dict[hreg]].mean(axis=1)
-        
-        new_column = (pd.DataFrame([avg_value]).transpose())
-        new_column.columns = [hreg]
-        df_list.append(new_column)   
-        
-        nan_column = (pd.DataFrame([nan_count]).transpose())
-        nan_column.columns = [hreg]
-        nan_list.append(nan_column)
-        
-        num_regions = len(included_regions)
-        num_regions_list.append(num_regions)
-
-
-    df = pd.concat(df_list, axis = 1)
-    
-#    nan_df = pd.concat(nan_list, axis = 1)
-#    num_regions_df = pd.DataFrame(num_regions_list).transpose()
-#    num_regions_df.columns = hierarchy_regs
-#    num_regions_df = pd.concat([num_regions_df]*len(nan_df), ignore_index=True)
-
-    #nan_filter = ((num_regions_df / 2) >= (nan_df))
-
-    #df_masked = df[nan_filter]
-    
-    id_cols = datafile[id_column_list]
-    full_df = pd.concat([id_cols, df], axis = 1)
-    
-    return(full_df)
-
-
-
-
-
-D1R_hierarchical_densities = group_data_by_hierarchy(D1R_densities, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-D2R_hierarchical_densities = group_data_by_hierarchy(D2R_densities, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-
-D1R_hierarchical_totals = group_data_by_hierarchy(D1R_totals, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-D2R_hierarchical_totals = group_data_by_hierarchy(D2R_totals, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-
-D1R_hierarchical_cell_sizes = group_data_by_hierarchy(D1R_cell_sizes, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-D2R_hierarchical_cell_sizes = group_data_by_hierarchy(D2R_cell_sizes, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
-
-
+# densities
+D1R_hierarchical_densities = ngf.group_data_by_hierarchy(D1R_densities, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D1R_hierarchical_densities.to_excel("D1R_hierarchical_densities.xlsx")
+
+D2R_hierarchical_densities = ngf.group_data_by_hierarchy(D2R_densities, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D2R_hierarchical_densities.to_excel("D2R_hierarchical_densities.xlsx")
 
+# total numbers
+D1R_hierarchical_totals = ngf.group_data_by_hierarchy(D1R_totals, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D1R_hierarchical_totals.to_excel("D1R_hierarchical_totals.xlsx")
+
+D2R_hierarchical_totals = ngf.group_data_by_hierarchy(D2R_totals, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D2R_hierarchical_totals.to_excel("D2R_hierarchical_totals.xlsx")
 
+# cell sizes
+D1R_hierarchical_cell_sizes = ngf.group_data_by_hierarchy(D1R_cell_sizes, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D1R_hierarchical_cell_sizes.to_excel("D1R_hierarchical_cell_sizes.xlsx")
+
+D2R_hierarchical_cell_sizes = ngf.group_data_by_hierarchy(D2R_cell_sizes, hierarchy_regs, regions_to_hierarchy_dict, ['ID', 'age', 'sex'])
 D2R_hierarchical_cell_sizes.to_excel("D2R_hierarchical_cell_sizes.xlsx")
+
+
+
+
+
+
+
+
+
 
 
 ## Get and save descriptive statistics
