@@ -7,7 +7,7 @@ Created on Thu Oct  6 14:35:34 2022
 
 
 import pandas as pd
-import create_nut_file_functions as nff
+import nutil_scripts.create_nut_file_functions as nff
 
 resourcedir = 'Y:/Dopamine_receptors/Analysis/resources//'
 metadata = resourcedir + "ids_for_nut_files.xlsx"
