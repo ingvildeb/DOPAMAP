@@ -13,9 +13,9 @@ import numpy as np
 ###########################################################################################################################
 
 ## Set up paths
-D1R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D1R_densities.xlsx"
-D1R_totals_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D1R_total_numbers.xlsx"
-D1R_cell_sizes_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D1R_cell_pixels.xlsx"
+D1R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_densities.xlsx"
+D1R_totals_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_total_numbers.xlsx"
+D1R_cell_sizes_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_cell_pixels.xlsx"
 
 
 D1R_densities = pd.read_excel(D1R_densities_path)
@@ -25,9 +25,9 @@ D1R_cell_sizes = pd.read_excel(D1R_cell_sizes_path)
 
 
 
-D2R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_densities.xlsx"
-D2R_totals_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_total_numbers.xlsx"
-D2R_cell_sizes_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_cell_pixels.xlsx"
+D2R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D2R\D2R_densities.xlsx"
+D2R_totals_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D2R\D2R_total_numbers.xlsx"
+D2R_cell_sizes_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D2R\D2R_cell_pixels.xlsx"
 
 
 D2R_densities = pd.read_excel(D2R_densities_path)
