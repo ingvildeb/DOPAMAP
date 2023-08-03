@@ -9,11 +9,7 @@ Created on Wed Dec  7 17:27:47 2022
 import os
 import pandas as pd
 import glob
-
-
-
-os.chdir(r'Y:\Dopamine_receptors\Analysis\resources\\')
-import nut_postprocessing_functions as nutpp
+import nutil_scripts.nut_postprocessing_functions as nutpp
 
 
 # ENTER PARAMETERS:
