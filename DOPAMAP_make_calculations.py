@@ -105,7 +105,7 @@ list_of_file_lists = [D1R_P70_male_files, D1R_P70_female_files, D1R_P49_male_fil
                       D2R_P25_male_files, D2R_P25_female_files, D2R_P17_male_files, D2R_P17_female_files]
 
 
-
+# for each group (receptor * age * sex), get the sheet with the 3D interpolated densities. used to remove values that deviate by 3 SDs from the mean of the region in the group.
 
 for group in list_of_file_lists:
 
@@ -123,12 +123,14 @@ for group in list_of_file_lists:
         section_densities.insert(0, "age", age, True)
         list_of_density_dfs.append(section_densities)
         
+    
+    # compile all the density dfs into one, and remove zero values, which are not needed for the calculation
     all_densities = pd.concat(list_of_density_dfs)    
     zerofilter = (all_densities != 0)  
     all_densities = all_densities[zerofilter]  
     
     
-    # generate average and mean value for each column:
+    # generate average and mean value for each region:
     
     avg_densities = all_densities.mean()
     avg_densities = pd.DataFrame(avg_densities[1:])
@@ -144,34 +146,29 @@ for group in list_of_file_lists:
     average_and_sd = pd.concat([avg_densities, sd_densities])
     
     
-    
     excluded_values_list = []
     new_densities_list = []
     
-    #z_scores_dict = {}
     
     densities_df = all_densities.iloc[:,4:]
+    
+    # exclude the outlier values
     
     for i, j in zip(densities_df.columns, average_and_sd):
         outlier_filter = []
     
         density = densities_df[i].values
         sd = average_and_sd[j].values[1]
-        print(sd)
         mean = average_and_sd[j].values[0]
-        print(mean)
-        z_scores = []
+        
         for value in density:
-            #print(value)
             if (value > (mean + (3*sd))) or (value < (mean - (3*sd))) or value > 100000:
                 exclude = True
             else:
                 exclude = False
             outlier_filter.append(exclude)
-            #Z = (value - mean) / sd
-            #z_scores.append(Z)
             outlier_filter_mask = np.array(outlier_filter)
-        #z_scores_dict[i] = z_scores
+
         new_density = pd.DataFrame(density)
         excluded_density = new_density[outlier_filter_mask].copy()
         new_density[outlier_filter_mask] = np.nan
@@ -191,19 +188,20 @@ for group in list_of_file_lists:
     new_all_densities = pd.concat([animal_info, new_all_densities], axis=1)
     
     
-    #new_z_scores = pd.DataFrame(z_scores_dict)
                 
-    print(new_all_densities)
+    # write excel sheet with only the included densities
     writer = pd.ExcelWriter(rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{genotype}\{age}\{genotype}_{age}_{sex}_densities.xlsx", engine='xlsxwriter')
     new_all_densities.to_excel(writer, sheet_name='new_densities', index=True, na_rep = "NaN")
     
     writer.save()
     
+    # write excel sheet with only the excluded densities
     writer = pd.ExcelWriter(rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{genotype}\{age}\{genotype}_{age}_{sex}_excluded_densities.xlsx", engine='xlsxwriter')
     excluded_all_densities.to_excel(writer, sheet_name='excluded_densities', index=True, na_rep = "NaN")
     
     writer.save()
     
+    # write sheet with densities averaged across sections for each animal
     densities_per_animal = new_all_densities.groupby("ID").mean()
     densities_per_animal.insert(0, "sex", sex, True)
     densities_per_animal.insert(0, "age", age, True)
@@ -218,25 +216,28 @@ for group in list_of_file_lists:
 
 
 
+# compile all the densities per animal into a common sheet
 
+receptors = ["D1R", "D2R"]
+file_lists = [D1R_files, D2R_files]
 
-densities_per_animal_paths = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\*/*_densities_per_animal.xlsx"
-densities_per_animal_files = glob.glob(densities_per_animal_paths)
-
-densities_per_animal_files_list = []
-
-for densityfile in densities_per_animal_files:
-    density_df = pd.read_excel(densityfile)
-    densities_per_animal_files_list.append(density_df)
-    print(density_df)
-
-all_densities_compiled = pd.concat(densities_per_animal_files_list)
-
-
-writer = pd.ExcelWriter(r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_densities.xlsx", engine='xlsxwriter')
-all_densities_compiled.to_excel(writer, sheet_name='all_densities', index=False, na_rep = "NaN")
-
-writer.save()   
+for receptor in receptors:
+    
+    densities_per_animal_paths = rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{receptor}\*/*_densities_per_animal.xlsx"
+    densities_per_animal_files = glob.glob(densities_per_animal_paths)
+    
+    densities_per_animal_files_list = []
+    
+    for densityfile in densities_per_animal_files:
+        density_df = pd.read_excel(densityfile)
+        densities_per_animal_files_list.append(density_df)
+    
+    all_densities_compiled = pd.concat(densities_per_animal_files_list)
+    
+    writer = pd.ExcelWriter(rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{receptor}\{receptor}_densities.xlsx", engine='xlsxwriter')
+    all_densities_compiled.to_excel(writer, sheet_name='all_densities', index=False, na_rep = "NaN")
+    
+    writer.save()   
 
 
 
@@ -245,146 +246,103 @@ writer.save()
 ## 7: calculate total number IF the whole region is covered (for each column, if first row = 0 and last row = 0, then calculate total number)
 
 section_sampling_frequency = 4
-
 all_totals_list = []   
 
 
-for file in D1R_files:
-    grouping = file.split("\\")[6]
-    name = grouping.split("_")[3]
-    sex = grouping.split("_")[2]
-    age = grouping.split("_")[1]
-
-    df = pd.read_excel(file, sheet_name = "object_counts_interpolated")
-    df.pop("Section")
+for receptor, file_list in zip(receptors, file_lists):
     
-    region_areas = pd.read_excel(file, sheet_name = "regions_interpolated")
-    region_areas.pop("Section")
-    #print(region_areas)
-
+    for file in file_list:
+        grouping = file.split("\\")[6]
+        name = grouping.split("_")[3]
+        sex = grouping.split("_")[2]
+        age = grouping.split("_")[1]
     
-    coverage_filter = []
-
-    for column in region_areas:
-        values = region_areas[column].values
-        if values.sum() == 0:
-            exclude = True
-        else:
-            exclude = False
+        df = pd.read_excel(file, sheet_name = "object_counts_interpolated")
+        df.pop("Section")
         
-        coverage_filter.append(exclude)
+        region_areas = pd.read_excel(file, sheet_name = "regions_interpolated")
+        region_areas.pop("Section")
+    
         
-    coverage_filter = pd.DataFrame(coverage_filter)
-    coverage_filter = coverage_filter.transpose()
-    coverage_filter.columns = regionnames
-    #print(coverage_filter)
+        coverage_filter = []
     
-
-    total_numbers = []
-    
-    
-    for column in df:
-        raw_number = df[column].values
-                #print(raw_number)
-        if (raw_number[0] == 0) and (raw_number[-1] == 0):
-            total = raw_number.sum(axis=0)
-            total_numbers.append(total)
-        else:
-            total_numbers.append(np.nan)    
+        for column in region_areas:
+            values = region_areas[column].values
+            if values.sum() == 0:
+                exclude = True
+            else:
+                exclude = False
             
-                        
-    total_numbers_df = pd.DataFrame(total_numbers)
-    total_numbers_df = total_numbers_df * section_sampling_frequency
-    total_numbers_df = total_numbers_df.transpose()
-    total_numbers_df.columns = regionnames
-    total_numbers_df = total_numbers_df[~coverage_filter]
-    total_numbers_df.insert(0, "Sex", sex, True)
-    total_numbers_df.insert(0, "Age", age, True)
-    total_numbers_df.insert(0, "ID", name, True)
-    all_totals_list.append(total_numbers_df)
-
-
-
-all_totals = pd.concat(all_totals_list)
+            coverage_filter.append(exclude)
+            
+        coverage_filter = pd.DataFrame(coverage_filter)
+        coverage_filter = coverage_filter.transpose()
+        coverage_filter.columns = regionnames
+        
+    
+        total_numbers = []
+        
+        
+        for column in df:
+            raw_number = df[column].values
+                    #print(raw_number)
+            if (raw_number[0] == 0) and (raw_number[-1] == 0):
+                total = raw_number.sum(axis=0)
+                total_numbers.append(total)
+            else:
+                total_numbers.append(np.nan)    
+                
+                            
+        total_numbers_df = pd.DataFrame(total_numbers)
+        total_numbers_df = total_numbers_df * section_sampling_frequency
+        total_numbers_df = total_numbers_df.transpose()
+        total_numbers_df.columns = regionnames
+        total_numbers_df = total_numbers_df[~coverage_filter]
+        total_numbers_df.insert(0, "Sex", sex, True)
+        total_numbers_df.insert(0, "Age", age, True)
+        total_numbers_df.insert(0, "ID", name, True)
+        all_totals_list.append(total_numbers_df)
     
     
-writer = pd.ExcelWriter(r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_total_numbers.xlsx", engine='xlsxwriter')
-all_totals.to_excel(writer, sheet_name='all_totals', index=False, na_rep = "NaN")
-
-writer.save()    
+    
+    all_totals = pd.concat(all_totals_list)
+        
+        
+    writer = pd.ExcelWriter(rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{receptor}\{receptor}_total_numbers.xlsx", engine='xlsxwriter')
+    all_totals.to_excel(writer, sheet_name='all_totals', index=False, na_rep = "NaN")
+    
+    writer.save()    
 
         
 
-
+## compile all cell sizes in pixels to a common sheet
 all_sizes_list = []   
 
-
-for file in D1R_files:
-    grouping = file.split("\\")[6]
-    name = grouping.split("_")[3]
-    sex = grouping.split("_")[2]
-    age = grouping.split("_")[1]
-
-    sizes_df = pd.read_excel(file, sheet_name = "object_mean_pixels")
-    sizes_df.insert(0, "sex", sex, True)
-    sizes_df.insert(0, "age", age, True)
-    sizes_df.insert(0, "ID", name, True)
+for receptor, file_list in zip(receptors, file_lists):
     
-    all_sizes_list.append(sizes_df)
+    for file in file_list:
+        grouping = file.split("\\")[6]
+        name = grouping.split("_")[3]
+        sex = grouping.split("_")[2]
+        age = grouping.split("_")[1]
+    
+        sizes_df = pd.read_excel(file, sheet_name = "object_mean_pixels")
+        sizes_df.insert(0, "sex", sex, True)
+        sizes_df.insert(0, "age", age, True)
+        sizes_df.insert(0, "ID", name, True)
+        
+        all_sizes_list.append(sizes_df)
+        
+    
+    all_sizes = pd.concat(all_sizes_list)
+    
+    writer = pd.ExcelWriter(rf"Y:\Dopamine_receptors\Analysis\QUINT_analysis\{receptor}\{receptor}_cell_pixels.xlsx", engine='xlsxwriter')
+    all_sizes.to_excel(writer, sheet_name='all_cell_pixels', index=False, na_rep = "NaN")
+    
+    writer.save()  
+
     
 
 
 
 
-all_sizes = pd.concat(all_sizes_list)
-
-writer = pd.ExcelWriter(r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_cell_pixels.xlsx", engine='xlsxwriter')
-all_sizes.to_excel(writer, sheet_name='all_cell_pixels', index=False, na_rep = "NaN")
-
-writer.save()  
-    
-
-
-
-
-## calculate average density
-
-mean_density = densities_df.mean(axis=0)
-mean_density_df = pd.DataFrame (mean_density)
-mean_density_df = mean_density_df.transpose()
-
-
-
-# apply coverage filter to mean densities, replace with "NaN"
-mean_density_df[coverage_filter] = np.nan
-
-
-
-
-# apply coverage filter to total numbers, replace with "NaN"
-total_numbers_df[coverage_filter] = np.nan
-
-
-
-# create a dataframe for the derived data (densities, total numbers, and object mean diameters
-
-derived_data = total_numbers_df.append(mean_density_df)
-derived_data.columns = regionnames[1:]
-
-objects_d = object_mean_diameters
-objects_d.columns = regionnames[1:]
-derived_data = derived_data.append(objects_d)
-
-objects_a = object_mean_areas
-objects_a.columns = regionnames[1:]
-derived_data = derived_data.append(objects_a)
-
-
-rows = ["total number", "density", "cell diameter", "cell area"]
-derived_data.insert(0, " ", rows, True)
-
-# write derived data to excel file:
-    
-writer = pd.ExcelWriter(nutilpath + 'derived_data_' + subject + '.xlsx', engine='xlsxwriter')
-derived_data.to_excel(writer, sheet_name='derived_data', index=False, na_rep = "NaN")
-writer.save()

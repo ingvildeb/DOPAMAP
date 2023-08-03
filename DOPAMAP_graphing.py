@@ -17,11 +17,11 @@ import nutil_scripts.graphing_functions as grf
 ############### SET UP DATA PATHS
 
 # density data at lowest hierarchy level (custom regions as defined in nutil)
-D1R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D1R_densities.xlsx"
+D1R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\D1R_densities.xlsx"
 D1R_densities = pd.read_excel(D1R_densities_path)
 D1R_densities["Area prostriata"] = np.nan
 
-D2R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_densities.xlsx"
+D2R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D2R\D2R_densities.xlsx"
 D2R_densities = pd.read_excel(D2R_densities_path)
 D2R_densities["Area prostriata"] = np.nan
 
