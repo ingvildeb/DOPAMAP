@@ -11,10 +11,6 @@ import numpy as np
 import matplotlib.pyplot as plt
 import nutil_scripts.graphing_functions as grf
 
-def unique_list(sequence):
-    seen = set()
-    return [x for x in sequence if not (x in seen or seen.add(x))]
-
 
 ###########################################################################################################################
 
@@ -28,7 +24,6 @@ D1R_densities["Area prostriata"] = np.nan
 D2R_densities_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_densities.xlsx"
 D2R_densities = pd.read_excel(D2R_densities_path)
 D2R_densities["Area prostriata"] = np.nan
-
 
 
 # density data at high level of the hierarchy (17 major brain regions as defined in the paper)
@@ -61,7 +56,7 @@ D2R_densities_hier_mean = D2R_densities_hier.groupby("age").mean()
 
 
 
-
+##################### ANALYSIS OF 17 MAJOR BRAIN REGIONS
 
 ######### SET UP SELECTED DATA
 
@@ -124,7 +119,7 @@ selected_D1_data = selected_D1_data.reset_index()
 selected_D2_data = selected_D2_data.reset_index()
 
 
-## GET MEANS FOR EACH AGE GROUP AND SEX
+## GET MEAN FOR EACH AGE GROUP AND SEX
 
 grouped_D1_data = selected_D1_data.groupby(["age", "sex"]).mean()
 grouped_D2_data = selected_D2_data.groupby(["age", "sex"]).mean()
@@ -144,7 +139,7 @@ D2R_hier_f17_mean, D2R_hier_f25_mean, D2R_hier_f35_mean, D2R_hier_f49_mean, D2R_
 D2_female_df = pd.DataFrame([D2R_hier_f17_mean, D2R_hier_f25_mean, D2R_hier_f35_mean, D2R_hier_f49_mean, D2R_hier_f70_mean])
 
 
-
+## GET SEM FOR EACH AGE GROUP AND SEX
 
 grouped_D1_sem = selected_D1_data.groupby(["age", "sex"]).sem()
 grouped_D2_sem = selected_D2_data.groupby(["age", "sex"]).sem()
@@ -165,10 +160,6 @@ D2_female_sem_df = pd.DataFrame([D2R_hier_f17_sem, D2R_hier_f25_sem, D2R_hier_f3
 
 
 ############ GRAPHING
-
-
-# from matplotlib.pyplot import figure  
-# from mpl_toolkits.mplot3d import Axes3D
 
 # GRAPHING HIGH-LEVEL REGIONS; used in Figures 3 and 4.
 
@@ -196,23 +187,24 @@ plt.show()
 
 
 
-maxval_dict_major_hier = grf.create_maxval_dict(customregsfile, "Hierarchy_major", "Region name", [D1R_densities_mean, D2R_densities_mean])
-maxval_dict_medium_hier = grf.create_maxval_dict(customregsfile, "Hierarchy", "Region name", [D1R_densities_mean, D2R_densities_mean])
 
-##### CREATE LINE PLOTS WITH FINE REGIONS ORGANIZED PER MEDIUM LEVEL HIERARCHICAL REGION
+
+# LINE PLOTS WITH FINE REGIONS ORGANIZED PER MEDIUM LEVEL HIERARCHICAL REGION
+maxval_dict_medium_hier = grf.create_maxval_dict(customregsfile, "Hierarchy", "Region name", [D1R_densities_mean, D2R_densities_mean])
 
 grf.create_line_graphs_per_hierarchy_level(customregsfile, "Hierarchy", "Region name", maxval_dict_medium_hier, D1R_densities_mean, "D1R_devplot_")
 grf.create_line_graphs_per_hierarchy_level(customregsfile, "Hierarchy", "Region name", maxval_dict_medium_hier, D2R_densities_mean, "D2R_devplot_")
     
     
-##### CREATE LINE PLOTS WITH MEDIUM LEVEL REGIONS ORGANIZED PER MAJOR HIERARCHICAL REGION
+# LINE PLOTS WITH MEDIUM LEVEL REGIONS ORGANIZED PER MAJOR HIERARCHICAL REGION
+maxval_dict_major_hier = grf.create_maxval_dict(customregsfile, "Hierarchy_major", "Region name", [D1R_densities_mean, D2R_densities_mean])
 
 grf.create_line_graphs_per_hierarchy_level(customregsfile, "Hierarchy_major", "Hierarchy", maxval_dict_major_hier, D1R_densities_hier_mean, "D1R_devplot_hier_")
 grf.create_line_graphs_per_hierarchy_level(customregsfile, "Hierarchy_major", "Hierarchy", maxval_dict_major_hier, D1R_densities_hier_mean, "D2R_devplot_hier_")
 
 
 
-##### CREATE BAR PLOTS PER AGE
+##### BAR PLOTS PER AGE (used in Figure 2 and Supplementary material)
 
 color_list = grf.set_region_colors(customregsfile)
 region_list = grf.set_region_names(customregsfile)    
@@ -288,7 +280,7 @@ def unique_list(sequence):
 
 
 ### D1R
-color_list_hier = grf.set_region_colors(customregsfile, R_col = "R_hier", G_col = "G_hier", B_col = "B_hier")
+color_list_hier = grf.set_region_colors(customregsfile, file_type = "csv", R_col = "R_hier", G_col = "G_hier", B_col = "B_hier")
 color_list_hier = unique_list(color_list_hier)
 ls_list_hier = ['-', ':','--', '-.', '-', ':','--', '-.', '-', ':','--', '-.', '-', ':','--', '-.', '-', ':','--', '-.', '-', ':','--', '-.', '-', ':']
 
