@@ -290,8 +290,8 @@ for receptor, file_list in zip(receptors, file_lists):
         total_numbers_df = total_numbers_df.transpose()
         total_numbers_df.columns = regionnames
         total_numbers_df = total_numbers_df[~coverage_filter]
-        total_numbers_df.insert(0, "Sex", sex, True)
-        total_numbers_df.insert(0, "Age", age, True)
+        total_numbers_df.insert(0, "sex", sex, True)
+        total_numbers_df.insert(0, "age", age, True)
         total_numbers_df.insert(0, "ID", name, True)
         all_totals_list.append(total_numbers_df)
     
