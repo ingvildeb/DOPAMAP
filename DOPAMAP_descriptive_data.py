@@ -5,18 +5,9 @@ Created on Wed Jan 25 09:29:51 2023
 @author: ingvieb
 """
 
-import os
 import pandas as pd
-import glob
-import re
 import numpy as np
-import xlwt
-from xlwt.Workbook import *
-from pandas import ExcelWriter
-import xlsxwriter
-from scipy.interpolate import interp1d
-import math
-import matplotlib.pyplot as plt
+
 
 
 ###########################################################################################################################
