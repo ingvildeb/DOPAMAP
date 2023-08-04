@@ -10,15 +10,16 @@ import numpy as np
 import glob
 import os
 
+
+# must be run for each age group separately, and make sure customregions point to the right file depending on the atlas used
+
 commonpath = r'Y:\Dopamine_receptors\Analysis\QUINT_analysis\D*R\P17\*\00_nonlin_registration_files/'
 allpaths = glob.glob(commonpath)
-#allfiles = glob.glob(commonpath + "*_statistics.xlsx")
 
 resourcedir = 'Y:/Dopamine_receptors/Analysis/resources//'
 customregsfile = resourcedir + 'customregions.csv'
 
-# path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\D1R\P70\D1R_P70_M_C22\00_nonlin_registration_files//"
-# file = path + "C22_nonlinear_summary_statistics.xlsx"
+
 resourcepath = r"Y:\Dopamine_receptors\Analysis\resources//" 
 
 customregions = r"Y:\Dopamine_receptors\Analysis\resources//" + "CustomRegions_Allen2017_Newmaster.xlsx"
@@ -44,7 +45,6 @@ for column in customregions:
     value = value[8:-19]
     selection.insert(1, "custom region", value)
     selection.columns = ["region ID", "custom region"]
-    #print(selection)
     df = pd.concat((df,selection))
     
     
@@ -56,18 +56,7 @@ writer.save()
 
 mydict = df.set_index('region ID')['custom region'].to_dict()
 
-#selection_paths = allpaths[1:4]
-#selection_files = allfiles[1:4]
-
-# ids = []
-
-# for f in allpaths:
-#     f = f.split("_n")[0]
-#     f = f.split("_")[5]
-#     f = f.split("\\")[0]
-#     ids.append(f)
-
-    
+   
 
 for path in allpaths:
     
@@ -77,8 +66,6 @@ for path in allpaths:
     ID = f
     
 
-    
-    #file = glob.glob(path + '*_statistics.xlsx')
     file = path + '/' + ID + '_nonlinear_summary_statistics.xlsx'
     
     if not os.path.exists(file):
@@ -106,21 +93,13 @@ for path in allpaths:
     for name in sheetnames:
         read = pd.read_excel(file, usecols=["Region ID", "percent absent", "pix whole section", "pix cropped section"], sheet_name=name)
         hidden_masks = pd.DataFrame(read)
-    #    print(t, read)
-        
+
 
         hidden_masks['Custom Region'] = hidden_masks['Region ID'].map(mydict)
         pix_whole_sum = (hidden_masks.groupby('Custom Region')['pix whole section'].sum())
         pix_cropped_sum = (hidden_masks.groupby('Custom Region')['pix cropped section'].sum())
         hidden_masks_summary = 1 - (pix_cropped_sum / pix_whole_sum)
-        #hidden_masks_summary = pd.DataFrame(hidden_masks_summary)
         
-        # if len(pix_whole_sum) == len(pix_cropped_sum):
-        #     print("True")
-        # else:
-        #     print("False")
-        
-        # hidden_masks_summary = (hidden_masks.groupby('Custom Region')["percent absent"].describe())
         hidden_masks_summary = hidden_masks_summary.reset_index('Custom Region')
         hidden_masks_summary = hidden_masks_summary.rename(columns={'Custom Region': 'Custom Region', 0: 'sum absent proportion'})
         hidden_masks_summary = hidden_masks_summary[['Custom Region','sum absent proportion']]
@@ -155,9 +134,7 @@ for path in allpaths:
         hidden_masks_summary2_transposed = hidden_masks_summary2.transpose()
         hidden_masks_summary2_transposed = hidden_masks_summary2_transposed[1:]
         hidden_masks_summary2_transposed.columns = regionnames[1:]
-    
-    
-        #print(hidden_masks_summary2_transposed)
+
         
         hidden_masks_df = pd.concat((hidden_masks_df, hidden_masks_summary2_transposed))
         
