@@ -12,7 +12,6 @@ import glob as glob
 import os
 import struct
 from tqdm import tqdm
-#import matplotlib.pyplot as plt
 
 
 
@@ -238,14 +237,7 @@ print('-------------------------------------------')
 print('All done! :D')
 
 
-#to print masks as .png images, use the following:    
-    
-# my_mask_images = []
 
-# for maskimg, filenum in zip(my_masks_gen, file_numbers):  
-#     img_out = maskimg * 255 
-#     cv2.imwrite(f'{outpath}_segmentation_masked{filenum}.png', img_out)
-    
 
 
 
