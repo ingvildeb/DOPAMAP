@@ -7,12 +7,12 @@ Created on Fri Sep 30 10:37:07 2022
 
 import cupy as np
 import nibabel as nib
-from datetime import datetime
 import matplotlib.pyplot as plt
 from glob import glob
 import pandas as pd
 import numpy as numpy
-
+import json
+from pandas import ExcelWriter
 
 
 volume_path = r"Y:\Dopamine_receptors\Analysis\resources\atlas_volumes\P14_label_rev-resampled.nii"
@@ -31,16 +31,10 @@ def generate_target_slice(alignment, volume, center_alignment = False):
     X_size = np.linalg.norm(np.array((Ux,Uy,Uz))) * 10
     Z_size = np.linalg.norm(np.array((Vx,Vy,Vz))) * 10
 
-    U_vector = np.array((Ux, Uy, Uz)) / X_size
-    V_vector = np.array((Vx, Vy, Vz)) / Z_size
     
     X_size =  np.round_(X_size).astype(int)
     Z_size =  np.round_(Z_size).astype(int)
 
-    #arange from 0 to 456 matching CCF U dimension (mediolateral)
-    U_increment = np.arange(Ox, Ox+Ux, -1)
-    #arange from 0 to 320 matching CCF V dimension (dorsoventral)
-    V_increment = np.arange(Oz, Oz+Vz, -1)
     #make this into a grid (0,0) to (320,456)
     Uarange = np.arange(0,1,1/X_size.get())
     Varange = np.arange(0,1,1/Z_size.get())
@@ -69,14 +63,9 @@ def generate_target_slice(alignment, volume, center_alignment = False):
     X_pad[out_bounds_Coords] = 0
     Y_pad[out_bounds_Coords] = 0
     Z_pad[out_bounds_Coords] = 0
-    # print('ob!: ')
-    # print(np.sum(X_pad[out_bounds_Coords]))
 
     regions = volume[X_pad, Y_pad, Z_pad]
-    # plt.plot(regions)
-    # plt.show()
-    # plt.plot(regions[out_bounds_Coords])
-    # plt.show()
+
     ##this is a quick hack to solve rounding errors
     Z_size = abs(np.asnumpy(Z_size))
     X_size = abs(np.asnumpy(X_size)) 
@@ -131,6 +120,35 @@ def calculate_Z(Yarr,Xarr, alignment):
 
 
 
+
+def read_QUINT_JSON(filename: str) -> pd.DataFrame:
+    """
+    Converts a QUINT JSON to a pandas dataframe
+    :param json: The path to the QUINT JSON
+    :type json: str
+    :return: A pandas dataframe
+    :rtype: pd.DataFrame
+    """
+    with open(filename, "r") as f:
+        data = json.load(f)
+    sections = data["slices"]
+    target_volume = data["target"]
+    alignments = [
+        row["anchoring"] if "anchoring" in row else 9 * [np.nan] for row in sections
+    ]
+    height = [row["height"] if "height" in row else [] for row in sections]
+    width = [row["width"] if "width" in row else [] for row in sections]
+    filenames = [row["filename"] if "filename" in row else [] for row in sections]
+    section_numbers = [row["nr"] if "nr" in row else [] for row in sections]
+    markers = [row["markers"] if "markers" in row else [] for row in sections]
+    df = pd.DataFrame({"Filenames": filenames, "nr": section_numbers})
+    df[["ox", "oy", "oz", "ux", "uy", "uz", "vx", "vy", "vz"]] = alignments
+    df["markers"] = markers
+    df["height"] = height
+    df["width"] = width
+    return df, target_volume
+
+
 def view_atlas_image(image, flip=True):
     if flip:
         image = image[::-1, ::-1]
@@ -162,7 +180,6 @@ def return_cropped_region_ids(alignment, atlas_shape_YXZ):
         region ids which are only in the cropped areas (so are fully cropped).
 
     """
-    start = datetime.now()
     
     atlas_y,atlas_x, atlas_z = atlas_shape_YXZ
     top_right_side_atlas_z = calculate_Z(0,atlas_x, alignment)
@@ -178,10 +195,6 @@ def return_cropped_region_ids(alignment, atlas_shape_YXZ):
     Xdist = np.linalg.norm(top_left_side_atlas_point-top_right_side_atlas_point) * 10
     Ydist = np.linalg.norm(top_left_side_atlas_point-bottom_left_side_atlas_point) * 10
     
-    checkpoint1 =  datetime.now() - start
-    # print('checkpoint 1: ', checkpoint1)
-    # print('Xdist: ', Xdist)
-    # print('Ydist: ', Ydist)
     XdistO = atlas_shape_YXZ[1]
     YdistO = atlas_shape_YXZ[0]
 
@@ -192,8 +205,6 @@ def return_cropped_region_ids(alignment, atlas_shape_YXZ):
     #interlace them both into a grid
     X_grid, Y_grid = np.meshgrid(X_indexes, Y_indexes)
 
-    checkpoint2 = datetime.now() - start 
-    # print('checkpoint 2: ', checkpoint2)
     #call a function which calculates the Z position for a given XY along the plane of 'alignment'
     Z_grid = calculate_Z(Y_grid, X_grid, alignment)
     #round Z grid to the nearest whole number and convert to an int
@@ -209,27 +220,23 @@ def return_cropped_region_ids(alignment, atlas_shape_YXZ):
     X_pad[out_bounds_Coords] = 0
     Y_pad[out_bounds_Coords] = 0
     Z_pad[out_bounds_Coords] = 0
+    
     #The rounding is necessary as we use the integers to index into the volume and get the corresponding region IDS (indexing requires integers)
     #here we get the whole image without any cropping
     image = volume[X_pad,Z_pad,Y_pad]
-   #view_atlas_image(image)
-    checkpoint3 = datetime.now() - start
-    # print('checkpoint 3: ', checkpoint3)
+
     #generate the section as it appears in QuickNII, crops and all
     og_im = generate_target_slice(alignment, volume)
-    checkpoint4 =  datetime.now() - start
-    # print('checkpoint 4: ', checkpoint4)
+
     #get all the unique regions in the original image, and how many pixels are included in each
     og_unique, og_pix = np.unique(og_im, return_counts=True)
-   #view_atlas_image(og_im)
+
     whole_unique, whole_pix = np.unique(image, return_counts=True)
     is_in = np.isin(whole_unique, og_unique)
     inv_is_in = np.isin(og_unique, whole_unique)
     not_in = ~is_in
     overlapping = whole_unique[is_in]
     cropped = whole_unique[not_in]
-    checkpoint5 = datetime.now() - start
-    # print('checkpoint 5: ', checkpoint5)
     
     overlapping_whole_pix = whole_pix[is_in] 
     non_overlapping_pix = whole_pix[not_in]
@@ -237,7 +244,8 @@ def return_cropped_region_ids(alignment, atlas_shape_YXZ):
     overlapping_percent =   og_pix[inv_is_in] / overlapping_whole_pix
     return overlapping, cropped , whole_pix , og_pix[inv_is_in], overlapping_percent
 
-from pandas import ExcelWriter
+
+
 
 def save_xls(dict_df, path):
     """
@@ -251,8 +259,11 @@ def save_xls(dict_df, path):
 
     writer.save()
     
-##set this to the Y and X values of the atlas you're using :)
+##set this to the Y and X values of the atlas you're using 
 atlas_shape_YX = numpy.array(volume.shape)[[2,0,1]] - 1
+
+
+#define the jsons for which you want to find hidden regions
 
 P49path = r'Y:\Dopamine_receptors\Analysis\QUINT_analysis\D*R\P17\*\00_nonlin_registration_files/*.json'
 #P70path = r'Y:\Dopamine_receptors\Analysis\QUINT_analysis\D*R\P25\*\00_nonlin_registration_files/*.json'
@@ -273,7 +284,7 @@ for js in jsons:
         filename = (df.iloc[index]['Filenames'])
         filename = '_'.join(filename.split('_')[3:])
         print(filename)
-        overlapping, cropped,  whole_pix, og_pix, overlap_pc = return_cropped_region_ids(alignment, atlas_shape_YX)
+        overlapping, cropped, whole_pix, og_pix, overlap_pc = return_cropped_region_ids(alignment, atlas_shape_YX)
         overlapping = np.asnumpy(overlapping)
         cropped = np.asnumpy(cropped)
         og_pix = np.asnumpy(og_pix)
@@ -283,7 +294,7 @@ for js in jsons:
         
         cropped_pixels[:] = numpy.nan
 
-        ##this is just adding zeores sorry for the variable name
+        ##this is just adding zeroes sorry for the variable name
         og_pix = numpy.array([*og_pix, *cropped_pixels])
         
 
@@ -296,9 +307,6 @@ for js in jsons:
         temp_dict = {'Region ID': temp_region_id, 'percent present':temp_percent, 'percent absent':temp_absent, 'pix whole section': whole_pix/10, 'pix cropped section': og_pix/10}
         dict_of_dicts[filename] = pd.DataFrame(temp_dict)
    
-
-
-
     fn = js.split('.')[0] + '_summary_statistics.xlsx'
     print(f'saving as {fn}...')
     save_xls(dict_of_dicts, fn)
