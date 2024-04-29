@@ -27,10 +27,10 @@ D2R_densities["Area prostriata"] = np.nan
 
 
 # density data at high level of the hierarchy (17 major brain regions as defined in the paper)
-D1R_densities_hier_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D1R_hierarchical_densities.xlsx"
+D1R_densities_hier_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\D1R_hierarchical_densities.xlsx"
 D1R_densities_hier = (pd.read_excel(D1R_densities_hier_path)).iloc[0:, 1:]
 
-D2R_densities_hier_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\Numbers\D2R_hierarchical_densities.xlsx"
+D2R_densities_hier_path = r"Y:\Dopamine_receptors\Analysis\QUINT_analysis\Derived_data\D2R_hierarchical_densities.xlsx"
 D2R_densities_hier = (pd.read_excel(D2R_densities_hier_path)).iloc[0:, 1:]
 
 
@@ -215,19 +215,28 @@ grf.create_line_graphs_per_hierarchy_level(customregsfile, "Hierarchy_major", "H
 color_list = grf.set_region_colors(customregsfile, file_type="csv")
 region_list = grf.set_region_names(customregsfile)    
 
+D1_densities_sem = D1R_densities.groupby(["age"]).sem()
+D2_densities_sem = D2R_densities.groupby(["age"]).sem()
+
+
 # create plots for D1R densities
 
 D1R_P70_densities_mean = D1R_densities_mean.loc["P70",:]
+D1R_P70_densities_sem = D1_densities_sem.loc["P70",:]
 D1R_P49_densities_mean = D1R_densities_mean.loc["P49",:]
+D1R_P49_densities_sem = D1_densities_sem.loc["P49",:]
 D1R_P35_densities_mean = D1R_densities_mean.loc["P35",:]
+D1R_P35_densities_sem = D1_densities_sem.loc["P35",:]
 D1R_P25_densities_mean = D1R_densities_mean.loc["P25",:]
+D1R_P25_densities_sem = D1_densities_sem.loc["P25",:]
 D1R_P17_densities_mean = D1R_densities_mean.loc["P17",:]
+D1R_P17_densities_sem = D1_densities_sem.loc["P17",:]
 
-grf.create_allen_bar_graph("D1R_P70", input_dir = D1R_P70_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D1R_P49", input_dir = D1R_P49_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D1R_P35", input_dir = D1R_P35_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D1R_P25", input_dir = D1R_P25_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D1R_P17", input_dir = D1R_P17_densities_mean, color_list = color_list, region_list = region_list)
+grf.create_allen_bar_graph("D1R_P70", input_dir = D1R_P70_densities_mean, error_dir = D1R_P70_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D1R_P49", input_dir = D1R_P49_densities_mean, error_dir = D1R_P49_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D1R_P35", input_dir = D1R_P35_densities_mean, error_dir = D1R_P35_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D1R_P25", input_dir = D1R_P25_densities_mean, error_dir = D1R_P25_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D1R_P17", input_dir = D1R_P17_densities_mean, error_dir = D1R_P17_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
 
 grf.create_allen_hbar_graph("D1R_P70", input_dir = D1R_P70_densities_mean, color_list = color_list, region_list = region_list)
 
@@ -235,16 +244,21 @@ grf.create_allen_hbar_graph("D1R_P70", input_dir = D1R_P70_densities_mean, color
 # create plots for D2R densities
             
 D2R_P70_densities_mean = D2R_densities_mean.loc["P70",:]
+D2R_P70_densities_sem = D2_densities_sem.loc["P70",:]
 D2R_P49_densities_mean = D2R_densities_mean.loc["P49",:]
+D2R_P49_densities_sem = D2_densities_sem.loc["P49",:]
 D2R_P35_densities_mean = D2R_densities_mean.loc["P35",:]
+D2R_P35_densities_sem = D2_densities_sem.loc["P35",:]
 D2R_P25_densities_mean = D2R_densities_mean.loc["P25",:]
+D2R_P25_densities_sem = D2_densities_sem.loc["P25",:]
 D2R_P17_densities_mean = D2R_densities_mean.loc["P17",:]
+D2R_P17_densities_sem = D2_densities_sem.loc["P17",:]
 
-grf.create_allen_bar_graph("D2R_P70", input_dir = D2R_P70_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D2R_P49", input_dir = D2R_P49_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D2R_P35", input_dir = D2R_P35_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D2R_P25", input_dir = D2R_P25_densities_mean, color_list = color_list, region_list = region_list)
-grf.create_allen_bar_graph("D2R_P17", input_dir = D2R_P17_densities_mean, color_list = color_list, region_list = region_list)
+grf.create_allen_bar_graph("D2R_P70", input_dir = D2R_P70_densities_mean, error_dir = D2R_P70_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D2R_P49", input_dir = D2R_P49_densities_mean, error_dir = D2R_P49_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D2R_P35", input_dir = D2R_P35_densities_mean, error_dir = D2R_P35_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D2R_P25", input_dir = D2R_P25_densities_mean, error_dir = D2R_P25_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
+grf.create_allen_bar_graph("D2R_P17", input_dir = D2R_P17_densities_mean, error_dir = D2R_P17_densities_sem, color_list = color_list, region_list = region_list, errcol="black")
     
 grf.create_allen_hbar_graph("D2R_P70", input_dir = D2R_P70_densities_mean, color_list = color_list, region_list = region_list)
 
