@@ -9,6 +9,7 @@ import nibabel as nib
 import numpy as np
 import matplotlib.pyplot as plt 
 import matplotlib as mpl
+from scipy.ndimage import zoom
 
 d1_path = r"C:\Users\ingvieb\dopamap\D1_volumes_averaged.nii"
 d1_vol = nib.load(d1_path)
@@ -53,13 +54,27 @@ plt.colorbar()
 plt.show()
 
 
+vol_for_header = nib.load(r"C:\Users\ingvieb\dopamap\annotation_boundary_10.nii.gz")
 
-out_img = nib.Nifti1Image(ratio_vol, d1_vol.affine)
+micron_size = 0.001 * 25 # i changed this to 10 from 25 for the zoom method below. 
+header = vol_for_header.header 
+header.set_xyzt_units(xyz=2, t=0)
+header['pixdim'][1:4] = np.array([micron_size, micron_size, micron_size])
+header['dim'] = d1_vol.header['dim']
+header['srow_x'] = np.array([0.025,0,0, -5.695])
+header['srow_y'] = np.array([0,0.025,0, 5.35])
+header['srow_z'] = np.array([0,0,-0.025, -5.22])
+vol_for_header.affine[:,:3] *= 2.5
+vol_for_header.affine[:3,:3] = np.array([[0.025,0,0],
+                                                       [0.0,0.025,0],
+                                                       [0.0,0,0.025]])
+print(header)
+out_img = nib.Nifti1Image(ratio_vol, vol_for_header.affine, header)
 nib.save(out_img, r"C:\Users\ingvieb\dopamap\ratio_vol.nii.gz")
 
 
 
-
+print(d1_vol.header)
 
 
 
