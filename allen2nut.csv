@@ -1,0 +1,1328 @@
+Allen_ID;R;G;B;name;nutil_id;D1R_classifier;D2R_classifier
+997;255;255;255;root;1;general;general
+8;191;218;227;Basic cell groups and regions;2;general;general
+567;176;240;255;Cerebrum;3;general;general
+688;176;255;184;Cerebral cortex;4;general;general
+695;112;255;112;Cortical plate;5;general;general
+315;112;255;113;Isocortex;6;general;general
+184;38;143;69;Frontal pole, cerebral cortex;7;general;general
+68;38;143;69;Frontal pole, layer 1;8;general;general
+667;38;143;69;Frontal pole, layer 2/3;9;general;general
+526157192;38;143;69;Frontal pole, layer 5;10;general;general
+526157196;38;143;69;Frontal pole, layer 6a;11;general;general
+526322264;38;143;69;Frontal pole, layer 6b;12;general;general
+500;31;157;90;Somatomotor areas;13;general;general
+107;31;157;90;Somatomotor areas, Layer 1;14;general;general
+219;31;157;90;Somatomotor areas, Layer 2/3;15;general;general
+299;31;157;90;Somatomotor areas, Layer 5;16;general;general
+644;31;157;90;Somatomotor areas, Layer 6a;17;general;general
+947;31;157;90;Somatomotor areas, Layer 6b;18;general;general
+985;31;157;90;Primary motor area;19;general;general
+320;31;157;90;Primary motor area, Layer 1;20;general;general
+943;31;157;90;Primary motor area, Layer 2/3;21;general;general
+648;31;157;90;Primary motor area, Layer 5;22;general;general
+844;31;157;90;Primary motor area, Layer 6a;23;general;general
+882;31;157;90;Primary motor area, Layer 6b;24;general;general
+993;31;157;90;Secondary motor area;25;general;general
+656;31;157;90;Secondary motor area, layer 1;26;general;general
+962;31;157;90;Secondary motor area, layer 2/3;27;general;general
+767;31;157;90;Secondary motor area, layer 5;28;general;general
+1021;31;157;90;Secondary motor area, layer 6a;29;general;general
+1085;31;157;90;Secondary motor area, layer 6b;30;general;general
+453;24;128;100;Somatosensory areas;31;general;general
+12993;24;128;100;Somatosensory areas, layer 1;32;general;general
+12994;24;128;100;Somatosensory areas, layer 2/3;33;general;general
+12995;24;128;100;Somatosensory areas, layer 4;34;general;general
+12996;24;128;100;Somatosensory areas, layer 5;35;general;general
+12997;24;128;100;Somatosensory areas, layer 6a;36;general;general
+12998;24;128;100;Somatosensory areas, layer 6b;37;general;general
+322;24;128;100;Primary somatosensory area;38;general;general
+793;24;128;100;Primary somatosensory area, layer 1;39;general;general
+346;24;128;100;Primary somatosensory area, layer 2/3;40;general;general
+865;24;128;100;Primary somatosensory area, layer 4;41;general;general
+921;24;128;100;Primary somatosensory area, layer 5;42;general;general
+686;24;128;100;Primary somatosensory area, layer 6a;43;general;general
+719;24;128;100;Primary somatosensory area, layer 6b;44;general;general
+353;24;128;100;Primary somatosensory area, nose;45;general;general
+558;24;128;100;Primary somatosensory area, nose, layer 1;46;general;general
+838;24;128;100;Primary somatosensory area, nose, layer 2/3;47;general;general
+654;24;128;100;Primary somatosensory area, nose, layer 4;48;general;general
+702;24;128;100;Primary somatosensory area, nose, layer 5;49;general;general
+889;24;128;100;Primary somatosensory area, nose, layer 6a;50;general;general
+929;24;128;100;Primary somatosensory area, nose, layer 6b;51;general;general
+329;24;128;100;Primary somatosensory area, barrel field;52;general;general
+981;24;128;100;Primary somatosensory area, barrel field, layer 1;53;general;general
+201;24;128;100;Primary somatosensory area, barrel field, layer 2/3;54;general;general
+1047;24;128;100;Primary somatosensory area, barrel field, layer 4;55;general;general
+1070;24;128;100;Primary somatosensory area, barrel field, layer 5;56;general;general
+1038;24;128;100;Primary somatosensory area, barrel field, layer 6a;57;general;general
+1062;24;128;100;Primary somatosensory area, barrel field, layer 6b;58;general;general
+480149202;24;128;100;Rostrolateral lateral visual area;59;general;general
+480149206;24;128;100;Rostrolateral lateral visual area, layer 1;60;general;general
+480149210;24;128;100;Rostrolateral lateral visual area, layer 2/3;61;general;general
+480149214;24;128;100;Rostrolateral lateral visual area, layer 4;62;general;general
+480149218;24;128;100;Rostrolateral lateral visual area,layer 5;63;general;general
+480149222;24;128;100;Rostrolateral lateral visual area, layer 6a;64;general;general
+480149226;24;128;100;Rostrolateral lateral visual area, layer 6b;65;general;general
+337;24;128;100;Primary somatosensory area, lower limb;66;general;general
+1030;24;128;100;Primary somatosensory area, lower limb, layer 1;67;general;general
+113;24;128;100;Primary somatosensory area, lower limb, layer 2/3;68;general;general
+1094;24;128;100;Primary somatosensory area, lower limb, layer 4;69;general;general
+1128;24;128;100;Primary somatosensory area, lower limb, layer 5;70;general;general
+478;24;128;100;Primary somatosensory area, lower limb, layer 6a;71;general;general
+510;24;128;100;Primary somatosensory area, lower limb, layer 6b;72;general;general
+345;24;128;100;Primary somatosensory area, mouth;73;general;general
+878;24;128;100;Primary somatosensory area, mouth, layer 1;74;general;general
+657;24;128;100;Primary somatosensory area, mouth, layer 2/3;75;general;general
+950;24;128;100;Primary somatosensory area, mouth, layer 4;76;general;general
+974;24;128;100;Primary somatosensory area, mouth, layer 5;77;general;general
+1102;24;128;100;Primary somatosensory area, mouth, layer 6a;78;general;general
+2;24;128;100;Primary somatosensory area, mouth, layer 6b;79;general;general
+369;24;128;100;Primary somatosensory area, upper limb;80;general;general
+450;24;128;100;Primary somatosensory area, upper limb, layer 1;81;general;general
+854;24;128;100;Primary somatosensory area, upper limb, layer 2/3;82;general;general
+577;24;128;100;Primary somatosensory area, upper limb, layer 4;83;general;general
+625;24;128;100;Primary somatosensory area, upper limb, layer 5;84;general;general
+945;24;128;100;Primary somatosensory area, upper limb, layer 6a;85;general;general
+1026;24;128;100;Primary somatosensory area, upper limb, layer 6b;86;general;general
+361;24;128;100;Primary somatosensory area, trunk;87;general;general
+1006;24;128;100;Primary somatosensory area, trunk, layer 1;88;general;general
+670;24;128;100;Primary somatosensory area, trunk, layer 2/3;89;general;general
+1086;24;128;100;Primary somatosensory area, trunk, layer 4;90;general;general
+1111;24;128;100;Primary somatosensory area, trunk, layer 5;91;general;general
+9;24;128;100;Primary somatosensory area, trunk, layer 6a;92;general;general
+461;24;128;100;Primary somatosensory area, trunk, layer 6b;93;general;general
+182305689;24;128;100;Primary somatosensory area, unassigned;94;general;general
+182305693;24;128;100;Primary somatosensory area, unassigned, layer 1;95;general;general
+182305697;24;128;100;Primary somatosensory area, unassigned, layer 2/3;96;general;general
+182305701;24;128;100;Primary somatosensory area, unassigned, layer 4;97;general;general
+182305705;24;128;100;Primary somatosensory area, unassigned, layer 5;98;general;general
+182305709;24;128;100;Primary somatosensory area, unassigned, layer 6a;99;general;general
+182305713;24;128;100;Primary somatosensory area, unassigned, layer 6b;100;general;general
+378;24;128;100;Supplemental somatosensory area;101;general;general
+873;24;128;100;Supplemental somatosensory area, layer 1;102;general;general
+806;24;128;100;Supplemental somatosensory area, layer 2/3;103;general;general
+1035;24;128;100;Supplemental somatosensory area, layer 4;104;general;general
+1090;24;128;100;Supplemental somatosensory area, layer 5;105;general;general
+862;24;128;100;Supplemental somatosensory area, layer 6a;106;general;general
+893;24;128;100;Supplemental somatosensory area, layer 6b;107;general;general
+1057;0;156;117;Gustatory areas;108;general;general
+36;0;156;117;Gustatory areas, layer 1;109;general;general
+180;0;156;117;Gustatory areas, layer 2/3;110;general;general
+148;0;156;117;Gustatory areas, layer 4;111;general;general
+187;0;156;117;Gustatory areas, layer 5;112;general;general
+638;0;156;117;Gustatory areas, layer 6a;113;general;general
+662;0;156;117;Gustatory areas, layer 6b;114;general;general
+677;17;173;131;Visceral area;115;general;general
+897;17;173;131;Visceral area, layer 1;116;general;general
+1106;17;173;131;Visceral area, layer 2/3;117;general;general
+1010;17;173;131;Visceral area, layer 4;118;general;general
+1058;17;173;131;Visceral area, layer 5;119;general;general
+857;17;173;131;Visceral area, layer 6a;120;general;general
+849;17;173;131;Visceral area, layer 6b;121;general;general
+247;1;147;153;Auditory areas;122;general;general
+1011;1;147;153;Dorsal auditory area;123;general;general
+527;1;147;153;Dorsal auditory area, layer 1;124;general;general
+600;1;147;153;Dorsal auditory area, layer 2/3;125;general;general
+678;1;147;153;Dorsal auditory area, layer 4;126;general;general
+252;1;147;153;Dorsal auditory area, layer 5;127;general;general
+156;1;147;153;Dorsal auditory area, layer 6a;128;general;general
+243;1;147;153;Dorsal auditory area, layer 6b;129;general;general
+480149230;1;147;153;Laterolateral anterior visual area;130;general;general
+480149234;1;147;153;Laterolateral anterior visual area, layer 1;131;general;general
+480149238;1;147;153;Laterolateral anterior visual area, layer 2/3;132;general;general
+480149242;1;147;153;Laterolateral anterior visual area, layer 4;133;general;general
+480149246;1;147;153;Laterolateral anterior visual area,layer 5;134;general;general
+480149250;1;147;153;Laterolateral anterior visual area, layer 6a;135;general;general
+480149254;1;147;153;Laterolateral anterior visual area, layer 6b;136;general;general
+1002;1;147;153;Primary auditory area;137;general;general
+735;1;147;153;Primary auditory area, layer 1;138;general;general
+251;1;147;153;Primary auditory area, layer 2/3;139;general;general
+816;1;147;153;Primary auditory area, layer 4;140;general;general
+847;1;147;153;Primary auditory area, layer 5;141;general;general
+954;1;147;153;Primary auditory area, layer 6a;142;general;general
+1005;1;147;153;Primary auditory area, layer 6b;143;general;general
+1027;1;147;153;Posterior auditory area;144;general;general
+696;1;147;153;Posterior auditory area, layer 1;145;general;general
+643;1;147;153;Posterior auditory area, layer 2/3;146;general;general
+759;1;147;153;Posterior auditory area, layer 4;147;general;general
+791;1;147;153;Posterior auditory area, layer 5;148;general;general
+249;1;147;153;Posterior auditory area, layer 6a;149;general;general
+456;1;147;153;Posterior auditory area, layer 6b;150;general;general
+1018;1;147;153;Ventral auditory area;151;general;general
+959;1;147;153;Ventral auditory area, layer 1;152;general;general
+755;1;147;153;Ventral auditory area, layer 2/3;153;general;general
+990;1;147;153;Ventral auditory area, layer 4;154;general;general
+1023;1;147;153;Ventral auditory area, layer 5;155;general;general
+520;1;147;153;Ventral auditory area, layer 6a;156;general;general
+598;1;147;153;Ventral auditory area, layer 6b;157;general;general
+669;8;133;140;Visual areas;158;general;general
+801;8;133;140;Visual areas, layer 1;159;general;general
+561;8;133;140;Visual areas, layer 2/3;160;general;general
+913;8;133;140;Visual areas, layer 4;161;general;general
+937;8;133;140;Visual areas, layer 5;162;general;general
+457;8;133;140;Visual areas, layer 6a;163;general;general
+497;8;133;140;Visual areas, layer 6b;164;general;general
+402;8;133;140;Anterolateral visual area;165;general;general
+1074;8;133;140;Anterolateral visual area, layer 1;166;general;general
+905;8;133;140;Anterolateral visual area, layer 2/3;167;general;general
+1114;8;133;140;Anterolateral visual area, layer 4;168;general;general
+233;8;133;140;Anterolateral visual area, layer 5;169;general;general
+601;8;133;140;Anterolateral visual area, layer 6a;170;general;general
+649;8;133;140;Anterolateral visual area, layer 6b;171;general;general
+394;8;133;140;Anteromedial visual area;172;general;general
+281;8;133;140;Anteromedial visual area, layer 1;173;general;general
+1066;8;133;140;Anteromedial visual area, layer 2/3;174;general;general
+401;8;133;140;Anteromedial visual area, layer 4;175;general;general
+433;8;133;140;Anteromedial visual area, layer 5;176;general;general
+1046;8;133;140;Anteromedial visual area, layer 6a;177;general;general
+441;8;133;140;Anteromedial visual area, layer 6b;178;general;general
+409;8;133;140;Lateral visual area;179;general;general
+421;8;133;140;Lateral visual area, layer 1;180;general;general
+973;8;133;140;Lateral visual area, layer 2/3;181;general;general
+573;8;133;140;Lateral visual area, layer 4;182;general;general
+613;8;133;140;Lateral visual area, layer 5;183;general;general
+74;8;133;140;Lateral visual area, layer 6a;184;general;general
+121;8;133;140;Lateral visual area, layer 6b;185;general;general
+385;8;133;140;Primary visual area;186;general;general
+593;8;133;140;Primary visual area, layer 1;187;general;general
+821;8;133;140;Primary visual area, layer 2/3;188;general;general
+721;8;133;140;Primary visual area, layer 4;189;general;general
+778;8;133;140;Primary visual area, layer 5;190;general;general
+33;8;133;140;Primary visual area, layer 6a;191;general;general
+305;8;133;140;Primary visual area, layer 6b;192;general;general
+425;8;133;140;Posterolateral visual area;193;general;general
+750;8;133;140;Posterolateral visual area, layer 1;194;general;general
+269;8;133;140;Posterolateral visual area, layer 2/3;195;general;general
+869;8;133;140;Posterolateral visual area, layer 4;196;general;general
+902;8;133;140;Posterolateral visual area, layer 5;197;general;general
+377;8;133;140;Posterolateral visual area, layer 6a;198;general;general
+393;8;133;140;Posterolateral visual area, layer 6b;199;general;general
+533;8;133;140;posteromedial visual area;200;general;general
+805;8;133;140;posteromedial visual area, layer 1;201;general;general
+41;8;133;140;posteromedial visual area, layer 2/3;202;general;general
+501;8;133;140;posteromedial visual area, layer 4;203;general;general
+565;8;133;140;posteromedial visual area, layer 5;204;general;general
+257;8;133;140;posteromedial visual area, layer 6a;205;general;general
+469;8;133;140;posteromedial visual area, layer 6b;206;general;general
+312782574;8;133;140;Laterointermediate area;207;general;general
+312782578;8;133;140;Laterointermediate area, layer 1;208;general;general
+312782582;8;133;140;Laterointermediate area, layer 2/3;209;general;general
+312782586;8;133;140;Laterointermediate area, layer 4;210;general;general
+312782590;8;133;140;Laterointermediate area, layer 5;211;general;general
+312782594;8;133;140;Laterointermediate area, layer 6a;212;general;general
+312782598;8;133;140;Laterointermediate area, layer 6b;213;general;general
+312782628;8;133;140;Postrhinal area;214;general;general
+312782632;8;133;140;Postrhinal area, layer 1;215;general;general
+312782636;8;133;140;Postrhinal area, layer 2/3;216;general;general
+312782640;8;133;140;Postrhinal area, layer 4;217;general;general
+312782644;8;133;140;Postrhinal area, layer 5;218;general;general
+312782648;8;133;140;Postrhinal area, layer 6a;219;general;general
+312782652;8;133;140;Postrhinal area, layer 6b;220;general;general
+31;64;166;102;Anterior cingulate area;221;general;general
+572;64;166;102;Anterior cingulate area, layer 1;222;general;general
+1053;64;166;102;Anterior cingulate area, layer 2/3;223;general;general
+739;64;166;102;Anterior cingulate area, layer 5;224;general;general
+179;64;166;102;Anterior cingulate area, layer 6a;225;general;general
+227;64;166;102;Anterior cingulate area, layer 6b;226;general;general
+39;64;166;102;Anterior cingulate area, dorsal part;227;general;general
+935;64;166;102;Anterior cingulate area, dorsal part, layer 1;228;general;general
+211;64;166;102;Anterior cingulate area, dorsal part, layer 2/3;229;general;general
+1015;64;166;102;Anterior cingulate area, dorsal part, layer 5;230;general;general
+919;64;166;102;Anterior cingulate area, dorsal part, layer 6a;231;general;general
+927;64;166;102;Anterior cingulate area, dorsal part, layer 6b;232;general;general
+48;64;166;102;Anterior cingulate area, ventral part;233;general;general
+588;64;166;102;Anterior cingulate area, ventral part, layer 1;234;general;general
+296;64;166;102;Anterior cingulate area, ventral part, layer 2/3;235;general;general
+772;64;166;102;Anterior cingulate area, ventral part, layer 5;236;general;general
+810;64;166;102;Anterior cingulate area, ventral part, 6a;237;general;general
+819;64;166;102;Anterior cingulate area, ventral part, 6b;238;general;general
+972;47;168;80;Prelimbic area;239;general;general
+171;47;168;80;Prelimbic area, layer 1;240;general;general
+195;47;168;80;Prelimbic area, layer 2;241;general;general
+304;47;168;80;Prelimbic area, layer 2/3;242;general;general
+363;47;168;80;Prelimbic area, layer 5;243;general;general
+84;47;168;80;Prelimbic area, layer 6a;244;general;general
+132;47;168;80;Prelimbic area, layer 6b;245;general;general
+44;89;179;99;Infralimbic area;246;general;general
+707;89;179;99;Infralimbic area, layer 1;247;general;general
+747;89;179;99;Infralimbic area, layer 2;248;general;general
+556;89;179;99;Infralimbic area, layer 2/3;249;general;general
+827;89;179;99;Infralimbic area, layer 5;250;general;general
+1054;89;179;99;Infralimbic area, layer 6a;251;general;general
+1081;89;179;99;Infralimbic area, layer 6b;252;general;general
+714;36;138;94;Orbital area;253;general;general
+264;36;138;94;Orbital area, layer 1;254;general;general
+492;36;138;94;Orbital area, layer 2/3;255;general;general
+352;36;138;94;Orbital area, layer 5;256;general;general
+476;36;138;94;Orbital area, layer 6a;257;general;general
+516;36;138;94;Orbital area, layer 6b;258;general;general
+723;36;138;94;Orbital area, lateral part;259;general;general
+448;36;138;94;Orbital area, lateral part, layer 1;260;general;general
+412;36;138;94;Orbital area, lateral part, layer 2/3;261;general;general
+630;36;138;94;Orbital area, lateral part, layer 5;262;general;general
+440;36;138;94;Orbital area, lateral part, layer 6a;263;general;general
+488;36;138;94;Orbital area, lateral part, layer 6b;264;general;general
+731;36;138;94;Orbital area, medial part;265;general;general
+484;36;138;94;Orbital area, medial part, layer 1;266;general;general
+524;36;138;94;Orbital area, medial part, layer 2;267;general;general
+582;36;138;94;Orbital area, medial part, layer 2/3;268;general;general
+620;36;138;94;Orbital area, medial part, layer 5;269;general;general
+910;36;138;94;Orbital area, medial part, layer 6a;270;general;general
+527696977;36;138;94;Orbital area, medial part, layer 6b;271;general;general
+738;36;138;94;Orbital area, ventral part;272;general;general
+746;36;138;94;Orbital area, ventrolateral part;273;general;general
+969;36;138;94;Orbital area, ventrolateral part, layer 1;274;general;general
+288;36;138;94;Orbital area, ventrolateral part, layer 2/3;275;general;general
+1125;36;138;94;Orbital area, ventrolateral part, layer 5;276;general;general
+608;36;138;94;Orbital area, ventrolateral part, layer 6a;277;general;general
+680;36;138;94;Orbital area, ventrolateral part, layer 6b;278;general;general
+95;33;152;102;Agranular insular area;279;general;general
+104;33;152;102;Agranular insular area, dorsal part;280;general;general
+996;33;152;102;Agranular insular area, dorsal part, layer 1;281;general;general
+328;33;152;102;Agranular insular area, dorsal part, layer 2/3;282;general;general
+1101;33;152;102;Agranular insular area, dorsal part, layer 5;283;general;general
+783;33;152;102;Agranular insular area, dorsal part, layer 6a;284;general;general
+831;33;152;102;Agranular insular area, dorsal part, layer 6b;285;general;general
+111;33;152;102;Agranular insular area, posterior part;286;general;general
+120;33;152;102;Agranular insular area, posterior part, layer 1;287;general;general
+163;33;152;102;Agranular insular area, posterior part, layer 2/3;288;general;general
+344;33;152;102;Agranular insular area, posterior part, layer 5;289;general;general
+314;33;152;102;Agranular insular area, posterior part, layer 6a;290;general;general
+355;33;152;102;Agranular insular area, posterior part, layer 6b;291;general;general
+119;33;152;102;Agranular insular area, ventral part;292;general;general
+704;33;152;102;Agranular insular area, ventral part, layer 1;293;general;general
+694;33;152;102;Agranular insular area, ventral part, layer 2/3;294;general;general
+800;33;152;102;Agranular insular area, ventral part, layer 5;295;general;general
+675;33;152;102;Agranular insular area, ventral part, layer 6a;296;general;general
+699;33;152;102;Agranular insular area, ventral part, layer 6b;297;general;general
+254;26;166;152;Retrosplenial area;298;general;general
+894;26;166;152;Retrosplenial area, lateral agranular part;299;general;general
+671;26;166;152;Retrosplenial area, lateral agranular part, layer 1;300;general;general
+965;26;166;152;Retrosplenial area, lateral agranular part, layer 2/3;301;general;general
+774;26;166;152;Retrosplenial area, lateral agranular part, layer 5;302;general;general
+906;26;166;152;Retrosplenial area, lateral agranular part, layer 6a;303;general;general
+279;26;166;152;Retrosplenial area, lateral agranular part, layer 6b;304;general;general
+480149258;26;166;152;Mediomedial anterior visual area;305;general;general
+480149262;26;166;152;Mediomedial anterior visual area, layer 1;306;general;general
+480149266;26;166;152;Mediomedial anterior visual area, layer 2/3;307;general;general
+480149270;26;166;152;Mediomedial anterior visual area, layer 4;308;general;general
+480149274;26;166;152;Mediomedial anterior visual area,layer 5;309;general;general
+480149278;26;166;152;Mediomedial anterior visual area, layer 6a;310;general;general
+480149282;26;166;152;Mediomedial anterior visual area, layer 6b;311;general;general
+480149286;26;166;152;Mediomedial posterior visual area;312;general;general
+480149290;26;166;152;Mediomedial posterior visual area, layer 1;313;general;general
+480149294;26;166;152;Mediomedial posterior visual area, layer 2/3;314;general;general
+480149298;26;166;152;Mediomedial posterior visual area, layer 4;315;general;general
+480149302;26;166;152;Mediomedial posterior visual area,layer 5;316;general;general
+480149306;26;166;152;Mediomedial posterior visual area, layer 6a;317;general;general
+480149310;26;166;152;Mediomedial posterior visual area, layer 6b;318;general;general
+480149314;26;166;152;Medial visual area;319;general;general
+480149318;26;166;152;Medial visual area, layer 1;320;general;general
+480149322;26;166;152;Medial visual area, layer 2/3;321;general;general
+480149326;26;166;152;Medial visual area, layer 4;322;general;general
+480149330;26;166;152;Medial visual area,layer 5;323;general;general
+480149334;26;166;152;Medial visual area, layer 6a;324;general;general
+480149338;26;166;152;Medial visual area, layer 6b;325;general;general
+879;26;166;152;Retrosplenial area, dorsal part;326;general;general
+442;26;166;152;Retrosplenial area, dorsal part, layer 1;327;general;general
+434;26;166;152;Retrosplenial area, dorsal part, layer 2/3;328;general;general
+545;26;166;152;Retrosplenial area, dorsal part, layer 4;329;general;general
+610;26;166;152;Retrosplenial area, dorsal part, layer 5;330;general;general
+274;26;166;152;Retrosplenial area, dorsal part, layer 6a;331;general;general
+330;26;166;152;Retrosplenial area, dorsal part, layer 6b;332;general;general
+886;26;166;152;Retrosplenial area, ventral part;333;general;general
+542;26;166;152;Retrosplenial area, ventral part, layer 1;334;general;general
+606;26;166;152;Retrosplenial area, ventral part, layer 2;335;general;general
+430;26;166;152;Retrosplenial area, ventral part, layer 2/3;336;general;general
+687;26;166;152;Retrosplenial area, ventral part, layer 5;337;general;general
+590;26;166;152;Retrosplenial area, ventral part, layer 6a;338;general;general
+622;26;166;152;Retrosplenial area, ventral part, layer 6b;339;general;general
+22;0;159;172;Posterior parietal association areas;340;general;general
+532;0;159;172;Posterior parietal association areas, layer 1;341;general;general
+241;0;159;172;Posterior parietal association areas, layer 2/3;342;general;general
+635;0;159;172;Posterior parietal association areas, layer 4;343;general;general
+683;0;159;172;Posterior parietal association areas, layer 5;344;general;general
+308;0;159;172;Posterior parietal association areas, layer 6a;345;general;general
+340;0;159;172;Posterior parietal association areas, layer 6b;346;general;general
+312782546;0;159;172;Anterior area;347;general;general
+312782550;0;159;172;Anterior area, layer 1;348;general;general
+312782554;0;159;172;Anterior area, layer 2/3;349;general;general
+312782558;0;159;172;Anterior area, layer 4;350;general;general
+312782562;0;159;172;Anterior area, layer 5;351;general;general
+312782566;0;159;172;Anterior area, layer 6a;352;general;general
+312782570;0;159;172;Anterior area, layer 6b;353;general;general
+417;0;159;172;Rostrolateral visual area;354;general;general
+312782604;0;159;172;Rostrolateral area, layer 1;355;general;general
+312782608;0;159;172;Rostrolateral area, layer 2/3;356;general;general
+312782612;0;159;172;Rostrolateral area, layer 4;357;general;general
+312782616;0;159;172;Rostrolateral area, layer 5;358;general;general
+312782620;0;159;172;Rostrolateral area, layer 6a;359;general;general
+312782624;0;159;172;Rostrolateral area, layer 6b;360;general;general
+541;21;176;179;Temporal association areas;361;general;general
+97;21;176;179;Temporal association areas, layer 1;362;general;general
+1127;21;176;179;Temporal association areas, layer 2/3;363;general;general
+234;21;176;179;Temporal association areas, layer 4;364;general;general
+289;21;176;179;Temporal association areas, layer 5;365;general;general
+729;21;176;179;Temporal association areas, layer 6a;366;general;general
+786;21;176;179;Temporal association areas, layer 6b;367;general;general
+922;14;150;132;Perirhinal area;368;general;general
+540;14;150;132;Perirhinal area, layer 1;369;general;general
+888;14;150;132;Perirhinal area, layer 2/3;370;general;general
+692;14;150;132;Perirhinal area, layer 5;371;general;general
+335;14;150;132;Perirhinal area, layer 6a;372;general;general
+368;14;150;132;Perirhinal area, layer 6b;373;general;general
+895;13;159;145;Ectorhinal area;374;general;general
+836;13;159;145;Ectorhinal area/Layer 1;375;general;general
+427;13;159;145;Ectorhinal area/Layer 2/3;376;general;general
+988;13;159;145;Ectorhinal area/Layer 5;377;general;general
+977;13;159;145;Ectorhinal area/Layer 6a;378;general;general
+1045;13;159;145;Ectorhinal area/Layer 6b;379;general;general
+698;154;210;189;Olfactory areas;380;general;general
+507;154;210;189;Main olfactory bulb;381;heavily;fibrous
+212;130;199;174;Main olfactory bulb, glomerular layer;382;heavily;fibrous
+220;130;199;174;Main olfactory bulb, granule layer;383;heavily;fibrous
+228;154;210;189;Main olfactory bulb, inner plexiform layer;384;heavily;fibrous
+236;130;199;174;Main olfactory bulb, mitral layer;385;heavily;fibrous
+244;154;210;189;Main olfactory bulb, outer plexiform layer;386;heavily;fibrous
+151;157;240;210;Accessory olfactory bulb;387;general;general
+188;157;240;210;Accessory olfactory bulb, glomerular layer;388;general;general
+196;149;228;200;Accessory olfactory bulb, granular layer;389;general;general
+204;157;240;210;Accessory olfactory bulb, mitral layer;390;general;general
+159;84;191;148;Anterior olfactory nucleus;391;general;general
+167;84;191;148;Anterior olfactory nucleus, dorsal part;392;general;general
+175;84;191;148;Anterior olfactory nucleus, external part;393;general;general
+183;84;191;148;Anterior olfactory nucleus, lateral part;394;general;general
+191;84;191;148;Anterior olfactory nucleus, medial part;395;general;general
+199;84;191;148;Anterior olfactory nucleus, posteroventral part;396;general;general
+160;84;191;148;Anterior olfactory nucleus, layer 1;397;general;general
+168;84;191;148;Anterior olfactory nucleus, layer 2;398;general;general
+589;98;208;159;Taenia tecta;399;general;general
+597;98;208;159;Taenia tecta, dorsal part;400;general;general
+297;98;208;159;Taenia tecta, dorsal part, layers 1-4;401;general;general
+1034;98;208;159;Taenia tecta, dorsal part, layer 1;402;general;general
+1042;98;208;159;Taenia tecta, dorsal part, layer 2;403;general;general
+1050;98;208;159;Taenia tecta, dorsal part, layer 3;404;general;general
+1059;98;208;159;Taenia tecta, dorsal part, layer 4;405;general;general
+605;98;208;159;Taenia tecta, ventral part;406;general;general
+306;98;208;159;Taenia tecta, ventral part, layers 1-3;407;general;general
+1067;98;208;159;Taenia tecta, ventral part, layer 1;408;general;general
+1075;98;208;159;Taenia tecta, ventral part, layer 2;409;general;general
+1082;98;208;159;Taenia tecta, ventral part, layer 3;410;general;general
+814;164;218;164;Dorsal peduncular area;411;general;general
+496;164;218;164;Dorsal peduncular area, layer 1;412;general;general
+535;164;218;164;Dorsal peduncular area, layer 2;413;general;general
+360;164;218;164;Dorsal peduncular area, layer 2/3;414;general;general
+646;164;218;164;Dorsal peduncular area, layer 5;415;general;general
+267;164;218;164;Dorsal peduncular area, layer 6a;416;general;general
+961;106;203;186;Piriform area;417;general;general
+152;106;203;186;Piriform area, layers 1-3;418;general;general
+276;106;203;186;Piriform area, molecular layer;419;general;general
+284;106;203;186;Piriform area, pyramidal layer;420;general;general
+291;106;203;186;Piriform area, polymorph layer;421;general;general
+619;149;228;200;Nucleus of the lateral olfactory tract;422;general;general
+392;149;228;200;Nucleus of the lateral olfactory tract, layers 1-3;423;general;general
+260;149;228;200;Nucleus of the lateral olfactory tract, molecular layer;424;general;general
+268;149;228;200;Nucleus of the lateral olfactory tract, pyramidal layer;425;general;general
+1139;149;228;200;Nucleus of the lateral olfactory tract, layer 3;426;general;general
+631;97;231;183;Cortical amygdalar area;427;general;general
+639;97;231;183;Cortical amygdalar area, anterior part;428;general;general
+192;97;231;183;Cortical amygdalar area, anterior part, layer 1;429;general;general
+200;97;231;183;Cortical amygdalar area, anterior part, layer 2;430;general;general
+208;97;231;183;Cortical amygdalar area, anterior part, layer 3;431;general;general
+647;97;231;183;Cortical amygdalar area, posterior part;432;general;general
+655;97;231;183;Cortical amygdalar area, posterior part, lateral zone;433;general;general
+584;97;231;183;Cortical amygdalar area, posterior part, lateral zone, layers 1-2;434;general;general
+376;97;231;183;Cortical amygdalar area, posterior part, lateral zone, layers 1-3;435;general;general
+216;97;231;183;Cortical amygdalar area, posterior part, lateral zone, layer 1;436;general;general
+224;97;231;183;Cortical amygdalar area, posterior part, lateral zone, layer 2;437;general;general
+232;97;231;183;Cortical amygdalar area, posterior part, lateral zone, layer 3;438;general;general
+663;97;231;183;Cortical amygdalar area, posterior part, medial zone;439;general;general
+592;97;231;183;Cortical amygdalar area, posterior part, medial zone, layers 1-2;440;general;general
+383;97;231;183;Cortical amygdalar area, posterior part, medial zone, layers 1-3;441;general;general
+240;97;231;183;Cortical amygdalar area, posterior part, medial zone, layer 1;442;general;general
+248;97;231;183;Cortical amygdalar area, posterior part, medial zone, layer 2;443;general;general
+256;97;231;183;Cortical amygdalar area, posterior part, medial zone, layer 3;444;general;general
+788;89;218;171;Piriform-amygdalar area;445;general;general
+400;89;218;171;Piriform-amygdalar area, layers 1-3;446;general;general
+408;89;218;171;Piriform-amygdalar area, molecular layer;447;general;general
+416;89;218;171;Piriform-amygdalar area, pyramidal layer;448;general;general
+424;89;218;171;Piriform-amygdalar area, polymorph layer;449;general;general
+566;168;236;211;Postpiriform transition area;450;general;general
+517;168;236;211;Postpiriform transition area, layers 1-3;451;general;general
+1140;168;236;211;Postpiriform transition area, layers 1;452;general;general
+1141;168;236;211;Postpiriform transition area, layers 2;453;general;general
+1142;168;236;211;Postpiriform transition area, layers 3;454;general;general
+1089;126;208;75;Hippocampal formation;455;general;general
+1080;126;208;75;Hippocampal region;456;general;general
+375;126;208;75;Ammon's horn;457;general;general
+382;126;208;75;Field CA1;458;general;general
+391;126;208;75;Field CA1, stratum lacunosum-moleculare;459;general;general
+399;126;208;75;Field CA1, stratum oriens;460;general;general
+407;102;168;61;Field CA1, pyramidal layer;461;general;general
+415;126;208;75;Field CA1, stratum radiatum;462;general;general
+423;126;208;75;Field CA2;463;general;general
+431;126;208;75;Field CA2, stratum lacunosum-moleculare;464;general;general
+438;126;208;75;Field CA2, stratum oriens;465;general;general
+446;102;168;61;Field CA2, pyramidal layer;466;general;general
+454;126;208;75;Field CA2, stratum radiatum;467;general;general
+463;126;208;75;Field CA3;468;general;general
+471;126;208;75;Field CA3, stratum lacunosum-moleculare;469;general;general
+479;126;208;75;Field CA3, stratum lucidum;470;general;general
+486;126;208;75;Field CA3, stratum oriens;471;general;general
+495;102;168;61;Field CA3, pyramidal layer;472;general;general
+504;126;208;75;Field CA3, stratum radiatum;473;general;general
+726;126;208;75;Dentate gyrus;474;general;general
+10703;126;208;75;Dentate gyrus, molecular layer;475;general;general
+10704;126;208;75;Dentate gyrus, polymorph layer;476;general;general
+632;102;168;61;Dentate gyrus, granule cell layer;477;general;general
+10702;126;208;75;Dentate gyrus, subgranular zone;478;general;general
+734;126;208;75;Dentate gyrus crest;479;general;general
+742;126;208;75;Dentate gyrus crest, molecular layer;480;general;general
+751;126;208;75;Dentate gyrus crest, polymorph layer;481;general;general
+758;126;208;75;Dentate gyrus crest, granule cell layer;482;general;general
+766;126;208;75;Dentate gyrus lateral blade;483;general;general
+775;126;208;75;Dentate gyrus lateral blade, molecular layer;484;general;general
+782;126;208;75;Dentate gyrus lateral blade, polymorph layer;485;general;general
+790;126;208;75;Dentate gyrus lateral blade, granule cell layer;486;general;general
+799;126;208;75;Dentate gyrus medial blade;487;general;general
+807;126;208;75;Dentate gyrus medial blade, molecular layer;488;general;general
+815;126;208;75;Dentate gyrus medial blade, polymorph layer;489;general;general
+823;126;208;75;Dentate gyrus medial blade, granule cell layer;490;general;general
+982;126;208;75;Fasciola cinerea;491;general;general
+19;126;208;75;Induseum griseum;492;general;general
+822;50;184;37;Retrohippocampal region;493;general;general
+909;50;184;37;Entorhinal area;494;general;general
+918;50;184;37;Entorhinal area, lateral part;495;general;general
+1121;50;184;37;Entorhinal area, lateral part, layer 1;496;general;general
+20;50;184;37;Entorhinal area, lateral part, layer 2;497;general;general
+999;50;184;37;Entorhinal area, lateral part, layer 2/3;498;general;general
+715;50;184;37;Entorhinal area, lateral part, layer 2a;499;general;general
+764;50;184;37;Entorhinal area, lateral part, layer 2b;500;general;general
+52;50;184;37;Entorhinal area, lateral part, layer 3;501;general;general
+92;50;184;37;Entorhinal area, lateral part, layer 4;502;general;general
+312;50;184;37;Entorhinal area, lateral part, layer 4/5;503;general;general
+139;50;184;37;Entorhinal area, lateral part, layer 5;504;general;general
+387;50;184;37;Entorhinal area, lateral part, layer 5/6;505;general;general
+28;50;184;37;Entorhinal area, lateral part, layer 6a;506;general;general
+60;50;184;37;Entorhinal area, lateral part, layer 6b;507;general;general
+926;50;184;37;Entorhinal area, medial part, dorsal zone;508;general;general
+526;50;184;37;Entorhinal area, medial part, dorsal zone, layer 1;509;general;general
+543;50;184;37;Entorhinal area, medial part, dorsal zone, layer 2;510;general;general
+468;50;184;37;Entorhinal area, medial part, dorsal zone, layer 2a;511;general;general
+508;50;184;37;Entorhinal area, medial part, dorsal zone, layer 2b;512;general;general
+664;50;184;37;Entorhinal area, medial part, dorsal zone, layer 3;513;general;general
+712;50;184;37;Entorhinal area, medial part, dorsal zone, layer 4;514;general;general
+727;50;184;37;Entorhinal area, medial part, dorsal zone, layer 5;515;general;general
+550;50;184;37;Entorhinal area, medial part, dorsal zone, layer 5/6;516;general;general
+743;50;184;37;Entorhinal area, medial part, dorsal zone, layer 6;517;general;general
+934;50;184;37;Entorhinal area, medial part, ventral zone;518;general;general
+259;50;184;37;Entorhinal area, medial part, ventral zone, layer 1;519;general;general
+324;50;184;37;Entorhinal area, medial part, ventral zone, layer 2;520;general;general
+371;50;184;37;Entorhinal area, medial part, ventral zone, layer 3;521;general;general
+419;50;184;37;Entorhinal area, medial part, ventral zone, layer 4;522;general;general
+1133;50;184;37;Entorhinal area, medial part, ventral zone, layer 5/6;523;general;general
+843;114;213;105;Parasubiculum;524;general;general
+10693;114;213;105;Parasubiculum, layer 1;525;general;general
+10694;114;213;105;Parasubiculum, layer 2;526;general;general
+10695;114;213;105;Parasubiculum, layer 3;527;general;general
+1037;72;200;60;Postsubiculum;528;general;general
+10696;72;200;60;Postsubiculum, layer 1;529;general;general
+10697;72;200;60;Postsubiculum, layer 2;530;general;general
+10698;72;200;60;Postsubiculum, layer 3;531;general;general
+1084;89;185;71;Presubiculum;532;general;general
+10699;89;185;71;Presubiculum, layer 1;533;general;general
+10700;89;185;71;Presubiculum, layer 2;534;general;general
+10701;89;185;71;Presubiculum, layer 3;535;general;general
+502;79;194;68;Subiculum;536;general;general
+509;79;194;68;Subiculum, dorsal part;537;general;general
+829;79;194;68;Subiculum, dorsal part, molecular layer;538;general;general
+845;75;181;71;Subiculum, dorsal part, pyramidal layer;539;general;general
+837;79;194;68;Subiculum, dorsal part, stratum radiatum;540;general;general
+518;79;194;68;Subiculum, ventral part;541;general;general
+853;79;194;68;Subiculum, ventral part, molecular layer;542;general;general
+870;75;181;71;Subiculum, ventral part, pyramidal layer;543;general;general
+861;79;194;68;Subiculum, ventral part, stratum radiatum;544;general;general
+484682470;88;186;72;Prosubiculum;545;general;general
+484682475;88;186;72;Prosubiculum, dorsal part;546;general;general
+484682479;88;186;72;Prosubiculum, dorsal part, molecular layer;547;general;general
+484682483;86;184;75;Prosubiculum, dorsal part, pyramidal layer;548;general;general
+484682487;88;186;72;Prosubiculum, dorsal part, stratum radiatum;549;general;general
+484682492;88;186;72;Prosubiculum, ventral part;550;general;general
+484682496;88;186;72;Prosubiculum, ventral part, molecular layer;551;general;general
+484682500;86;184;75;Prosubiculum, ventral part, pyramidal layer;552;general;general
+484682504;88;186;72;Prosubiculum, ventral part, stratum radiatum;553;general;general
+589508447;51;185;50;Hippocampo-amygdalar transition area;554;general;general
+484682508;51;185;50;Area prostriata;555;general;general
+703;138;218;135;Cortical subplate;556;general;general
+16;138;218;135;Layer 6b, isocortex;557;general;general
+583;138;218;135;Claustrum;558;general;general
+942;160;238;157;Endopiriform nucleus;559;general;general
+952;160;238;157;Endopiriform nucleus, dorsal part;560;general;general
+966;160;238;157;Endopiriform nucleus, ventral part;561;general;general
+131;144;235;141;Lateral amygdalar nucleus;562;general;general
+295;157;231;156;Basolateral amygdalar nucleus;563;general;general
+303;157;231;156;Basolateral amygdalar nucleus, anterior part;564;general;general
+311;157;231;156;Basolateral amygdalar nucleus, posterior part;565;general;general
+451;157;231;156;Basolateral amygdalar nucleus, ventral part;566;general;general
+319;132;234;129;Basomedial amygdalar nucleus;567;general;general
+327;132;234;129;Basomedial amygdalar nucleus, anterior part;568;general;general
+334;132;234;129;Basomedial amygdalar nucleus, posterior part;569;general;general
+780;151;236;147;Posterior amygdalar nucleus;570;general;general
+623;152;214;249;Cerebral nuclei;571;general;general
+477;152;214;249;Striatum;572;heavily;heavily
+485;152;214;249;Striatum dorsal region;573;heavily;heavily
+672;152;214;249;Caudoputamen;574;heavily;heavily
+493;128;205;248;Striatum ventral region;575;heavily;heavily
+56;128;205;248;Nucleus accumbens;576;heavily;heavily
+998;128;205;248;Fundus of striatum;577;heavily;heavily
+754;128;205;248;Olfactory tubercle;578;heavily;heavily
+481;128;205;248;Islands of Calleja;579;heavily;heavily
+489;128;205;248;Major island of Calleja;580;heavily;heavily
+144;128;205;248;Olfactory tubercle, layers 1-3;581;heavily;heavily
+458;128;205;248;Olfactory tubercle, molecular layer;582;heavily;heavily
+465;128;205;248;Olfactory tubercle, pyramidal layer;583;heavily;heavily
+473;128;205;248;Olfactory tubercle, polymorph layer;584;heavily;heavily
+549009199;128;205;248;Lateral strip of striatum;585;general;general
+275;144;203;237;Lateral septal complex;586;general;general
+242;144;203;237;Lateral septal nucleus;587;general;general
+250;144;203;237;Lateral septal nucleus, caudal (caudodorsal) part;588;general;general
+258;144;203;237;Lateral septal nucleus, rostral (rostroventral) part;589;general;general
+266;144;203;237;Lateral septal nucleus, ventral part;590;general;general
+310;144;203;237;Septofimbrial nucleus;591;general;general
+333;144;203;237;Septohippocampal nucleus;592;general;general
+278;128;192;226;Striatum-like amygdalar nuclei;593;general;general
+23;128;192;226;Anterior amygdalar area;594;general;general
+292;128;192;226;Bed nucleus of the accessory olfactory tract;595;general;general
+536;128;192;226;Central amygdalar nucleus;596;general;general
+544;128;192;226;Central amygdalar nucleus, capsular part;597;general;heavily
+551;128;192;226;Central amygdalar nucleus, lateral part;598;general;heavily
+559;128;192;226;Central amygdalar nucleus, medial part;599;general;general
+1105;128;192;226;Intercalated amygdalar nucleus;600;general;general
+403;128;192;226;Medial amygdalar nucleus;601;general;general
+411;128;192;226;Medial amygdalar nucleus, anterodorsal part;602;general;general
+418;128;192;226;Medial amygdalar nucleus, anteroventral part;603;general;general
+426;128;192;226;Medial amygdalar nucleus, posterodorsal part;604;general;general
+472;128;192;226;Medial amygdalar nucleus, posterodorsal part, sublayer a;605;general;general
+480;128;192;226;Medial amygdalar nucleus, posterodorsal part, sublayer b;606;general;general
+487;128;192;226;Medial amygdalar nucleus, posterodorsal part, sublayer c;607;general;general
+435;128;192;226;Medial amygdalar nucleus, posteroventral part;608;general;general
+803;133;153;204;Pallidum;609;fibrous;fibrous
+818;133;153;204;Pallidum, dorsal region;610;fibrous;fibrous
+1022;133;153;204;Globus pallidus, external segment;611;fibrous;fibrous
+1031;133;153;204;Globus pallidus, internal segment;612;fibrous;fibrous
+835;162;177;216;Pallidum, ventral region;613;fibrous;fibrous
+342;162;177;216;Substantia innominata;614;fibrous;fibrous
+298;162;177;216;Magnocellular nucleus;615;general;general
+826;150;167;211;Pallidum, medial region;616;fibrous;fibrous
+904;150;167;211;Medial septal complex;617;general;general
+564;150;167;211;Medial septal nucleus;618;general;general
+596;150;167;211;Diagonal band nucleus;619;general;general
+581;150;167;211;Triangular nucleus of septum;620;general;general
+809;179;192;223;Pallidum, caudal region;621;fibrous;fibrous
+351;179;192;223;Bed nuclei of the stria terminalis;622;general;general
+359;179;192;223;Bed nuclei of the stria terminalis, anterior division;623;general;general
+537;179;192;223;Bed nuclei of the stria terminalis, anterior division, anterolateral area;624;general;general
+498;179;192;223;Bed nuclei of the stria terminalis, anterior division, anteromedial area;625;general;general
+505;179;192;223;Bed nuclei of the stria terminalis, anterior division, dorsomedial nucleus;626;general;general
+513;179;192;223;Bed nuclei of the stria terminalis, anterior division, fusiform nucleus;627;general;general
+546;179;192;223;Bed nuclei of the stria terminalis, anterior division, juxtacapsular nucleus;628;general;general
+521;179;192;223;Bed nuclei of the stria terminalis, anterior division, magnocellular nucleus;629;general;general
+554;179;192;223;Bed nuclei of the stria terminalis, anterior division, oval nucleus;630;general;general
+562;179;192;223;Bed nuclei of the stria terminalis, anterior division, rhomboid nucleus;631;general;general
+529;179;192;223;Bed nuclei of the stria terminalis, anterior division, ventral nucleus;632;general;general
+367;179;192;223;Bed nuclei of the stria terminalis, posterior division;633;general;general
+569;179;192;223;Bed nuclei of the stria terminalis, posterior division, dorsal nucleus;634;general;general
+578;179;192;223;Bed nuclei of the stria terminalis, posterior division, principal nucleus;635;general;general
+585;179;192;223;Bed nuclei of the stria terminalis, posterior division, interfascicular nucleus;636;general;general
+594;179;192;223;Bed nuclei of the stria terminalis, posterior division, transverse nucleus;637;general;general
+602;179;192;223;Bed nuclei of the stria terminalis, posterior division, strial extension;638;general;general
+287;179;192;223;Bed nucleus of the anterior commissure;639;general;general
+343;255;112;128;Brain stem;640;general;general
+1129;255;112;128;Interbrain;641;general;general
+549;255;112;128;Thalamus;642;general;general
+864;255;128;132;Thalamus, sensory-motor cortex related;643;general;general
+637;255;128;132;Ventral group of the dorsal thalamus;644;general;general
+629;255;128;132;Ventral anterior-lateral complex of the thalamus;645;general;general
+685;255;128;132;Ventral medial nucleus of the thalamus;646;general;general
+709;255;128;132;Ventral posterior complex of the thalamus;647;general;general
+718;255;128;132;Ventral posterolateral nucleus of the thalamus;648;general;general
+725;255;128;132;Ventral posterolateral nucleus of the thalamus, parvicellular part;649;general;general
+733;255;128;132;Ventral posteromedial nucleus of the thalamus;650;general;general
+741;255;128;132;Ventral posteromedial nucleus of the thalamus, parvicellular part;651;general;general
+563807435;255;128;132;Posterior triangular thalamic nucleus;652;general;general
+406;255;128;132;Subparafascicular nucleus;653;general;general
+414;255;128;132;Subparafascicular nucleus, magnocellular part;654;general;general
+422;255;128;132;Subparafascicular nucleus, parvicellular part;655;general;general
+609;255;128;132;Subparafascicular area;656;general;general
+1044;255;128;132;Peripeduncular nucleus;657;general;general
+1008;255;128;132;Geniculate group, dorsal thalamus;658;general;general
+475;255;128;132;Medial geniculate complex;659;general;general
+1072;255;128;132;Medial geniculate complex, dorsal part;660;general;general
+1079;255;128;132;Medial geniculate complex, ventral part;661;general;general
+1088;255;128;132;Medial geniculate complex, medial part;662;general;general
+170;255;128;132;Dorsal part of the lateral geniculate complex;663;general;general
+496345664;255;128;132;Dorsal part of the lateral geniculate complex, shell;664;general;general
+496345668;255;128;132;Dorsal part of the lateral geniculate complex, core;665;general;general
+496345672;255;128;132;Dorsal part of the lateral geniculate complex, ipsilateral zone;666;general;general
+856;255;144;159;Thalamus, polymodal association cortex related;667;general;general
+138;255;144;159;Lateral group of the dorsal thalamus;668;general;general
+218;255;144;159;Lateral posterior nucleus of the thalamus;669;general;general
+1020;255;144;159;Posterior complex of the thalamus;670;general;general
+1029;255;144;159;Posterior limiting nucleus of the thalamus;671;general;general
+325;255;144;159;Suprageniculate nucleus;672;general;general
+560581551;255;144;159;Ethmoid nucleus of the thalamus;673;general;general
+560581555;255;144;159;Retroethmoid nucleus;674;general;general
+239;255;144;159;Anterior group of the dorsal thalamus;675;general;general
+255;255;144;159;Anteroventral nucleus of thalamus;676;general;general
+127;255;144;159;Anteromedial nucleus;677;general;general
+1096;255;144;159;Anteromedial nucleus, dorsal part;678;general;general
+1104;255;144;159;Anteromedial nucleus, ventral part;679;general;general
+64;255;144;159;Anterodorsal nucleus;680;general;general
+1120;255;144;159;Interanteromedial nucleus of the thalamus;681;general;general
+1113;255;144;159;Interanterodorsal nucleus of the thalamus;682;general;general
+155;255;144;159;Lateral dorsal nucleus of thalamus;683;general;general
+444;255;144;159;Medial group of the dorsal thalamus;684;general;general
+59;255;144;159;Intermediodorsal nucleus of the thalamus;685;general;general
+362;255;144;159;Mediodorsal nucleus of thalamus;686;general;general
+617;255;144;159;Mediodorsal nucleus of the thalamus, central part;687;general;general
+626;255;144;159;Mediodorsal nucleus of the thalamus, lateral part;688;general;general
+636;255;144;159;Mediodorsal nucleus of the thalamus, medial part;689;general;general
+366;255;144;159;Submedial nucleus of the thalamus;690;general;general
+1077;255;144;159;Perireunensis nucleus;691;general;general
+571;255;144;159;Midline group of the dorsal thalamus;692;general;general
+149;255;144;159;Paraventricular nucleus of the thalamus;693;general;general
+15;255;144;159;Parataenial nucleus;694;general;general
+181;255;144;159;Nucleus of reuniens;695;general;general
+560581559;255;144;159;Xiphoid thalamic nucleus;696;general;general
+51;255;144;159;Intralaminar nuclei of the dorsal thalamus;697;general;general
+189;255;144;159;Rhomboid nucleus;698;general;general
+599;255;144;159;Central medial nucleus of the thalamus;699;general;general
+907;255;144;159;Paracentral nucleus;700;general;general
+575;255;144;159;Central lateral nucleus of the thalamus;701;general;general
+930;255;144;159;Parafascicular nucleus;702;general;general
+560581563;255;144;159;Posterior intralaminar thalamic nucleus;703;general;general
+262;255;144;159;Reticular nucleus of the thalamus;704;general;general
+1014;255;144;159;Geniculate group, ventral thalamus;705;general;general
+27;255;144;159;Intergeniculate leaflet of the lateral geniculate complex;706;heavily;general
+563807439;255;144;159;Intermediate geniculate nucleus;707;general;general
+178;255;144;159;Ventral part of the lateral geniculate complex;708;general;general
+300;255;144;159;Ventral part of the lateral geniculate complex, lateral zone;709;general;general
+316;255;144;159;Ventral part of the lateral geniculate complex, medial zone;710;general;general
+321;255;144;159;Subgeniculate nucleus;711;general;general
+958;255;144;159;Epithalamus;712;general;general
+483;255;144;159;Medial habenula;713;general;general
+186;255;144;159;Lateral habenula;714;general;general
+953;255;144;159;Pineal body;715;general;general
+1097;230;68;56;Hypothalamus;716;general;general
+157;255;93;80;Periventricular zone;717;general;general
+390;255;93;80;Supraoptic nucleus;718;general;general
+332;255;93;80;Accessory supraoptic group;719;general;general
+432;255;93;80;Nucleus circularis;720;general;general
+38;255;93;80;Paraventricular hypothalamic nucleus;721;general;general
+71;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division;722;general;general
+47;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division, anterior magnocellular part;723;general;general
+79;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division, medial magnocellular part;724;general;general
+103;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part;725;general;general
+652;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, lateral zone;726;general;general
+660;255;93;80;Paraventricular hypothalamic nucleus, magnocellular division, posterior magnocellular part, medial zone;727;general;general
+94;255;93;80;Paraventricular hypothalamic nucleus, parvicellular division;728;general;general
+55;255;93;80;Paraventricular hypothalamic nucleus, parvicellular division, anterior parvicellular part;729;general;general
+87;255;93;80;Paraventricular hypothalamic nucleus, parvicellular division, medial parvicellular part, dorsal zone;730;general;general
+110;255;93;80;Paraventricular hypothalamic nucleus, parvicellular division, periventricular part;731;general;general
+30;255;93;80;Periventricular hypothalamic nucleus, anterior part;732;general;general
+118;255;93;80;Periventricular hypothalamic nucleus, intermediate part;733;general;general
+223;255;93;80;Arcuate hypothalamic nucleus;734;general;general
+141;255;85;71;Periventricular region;735;general;general
+72;255;85;71;Anterodorsal preoptic nucleus;736;general;general
+80;255;85;71;Anterior hypothalamic area;737;general;general
+263;255;85;71;Anteroventral preoptic nucleus;738;general;general
+272;255;85;71;Anteroventral periventricular nucleus;739;general;general
+830;255;85;71;Dorsomedial nucleus of the hypothalamus;740;general;general
+668;255;85;71;Dorsomedial nucleus of the hypothalamus, anterior part;741;general;general
+676;255;85;71;Dorsomedial nucleus of the hypothalamus, posterior part;742;general;general
+684;255;85;71;Dorsomedial nucleus of the hypothalamus, ventral part;743;general;general
+452;255;85;71;Median preoptic nucleus;744;general;general
+523;255;85;71;Medial preoptic area;745;general;general
+763;255;85;71;Vascular organ of the lamina terminalis;746;general;general
+914;255;85;71;Posterodorsal preoptic nucleus;747;general;general
+1109;255;85;71;Parastrial nucleus;748;general;general
+1124;255;85;71;Suprachiasmatic preoptic nucleus;749;general;general
+126;255;85;71;Periventricular hypothalamic nucleus, posterior part;750;general;general
+133;255;85;71;Periventricular hypothalamic nucleus, preoptic part;751;general;general
+347;255;85;71;Subparaventricular zone;752;general;general
+286;255;85;71;Suprachiasmatic nucleus;753;general;general
+338;255;85;71;Subfornical organ;754;general;general
+576073699;255;85;71;Ventromedial preoptic nucleus;755;general;general
+689;255;85;71;Ventrolateral preoptic nucleus;756;general;general
+467;255;76;62;Hypothalamic medial zone;757;general;general
+88;255;76;62;Anterior hypothalamic nucleus;758;general;general
+700;255;76;62;Anterior hypothalamic nucleus, anterior part;759;general;general
+708;255;76;62;Anterior hypothalamic nucleus, central part;760;general;general
+716;255;76;62;Anterior hypothalamic nucleus, dorsal part;761;general;general
+724;255;76;62;Anterior hypothalamic nucleus, posterior part;762;general;general
+331;255;76;62;Mammillary body;763;general;general
+210;255;76;62;Lateral mammillary nucleus;764;general;general
+491;255;76;62;Medial mammillary nucleus;765;general;general
+732;255;76;62;Medial mammillary nucleus, median part;766;general;general
+606826647;255;76;62;Medial mammillary nucleus, lateral part;767;general;general
+606826651;255;76;62;Medial mammillary nucleus, medial part;768;general;general
+606826655;255;76;62;Medial mammillary nucleus, posterior part;769;general;general
+606826659;255;76;62;Medial mammillary nucleus, dorsal part;770;general;general
+525;255;76;62;Supramammillary nucleus;771;general;general
+1110;255;76;62;Supramammillary nucleus, lateral part;772;general;general
+1118;255;76;62;Supramammillary nucleus, medial part;773;general;general
+557;255;76;62;Tuberomammillary nucleus;774;general;general
+1126;255;76;62;Tuberomammillary nucleus, dorsal part;775;general;general
+1;255;76;62;Tuberomammillary nucleus, ventral part;776;general;general
+515;255;76;62;Medial preoptic nucleus;777;general;general
+740;255;76;62;Medial preoptic nucleus, central part;778;general;general
+748;255;76;62;Medial preoptic nucleus, lateral part;779;general;general
+756;255;76;62;Medial preoptic nucleus, medial part;780;general;general
+980;255;76;62;Dorsal premammillary nucleus;781;general;general
+1004;255;76;62;Ventral premammillary nucleus;782;general;general
+63;255;76;62;Paraventricular hypothalamic nucleus, descending division;783;general;general
+439;255;76;62;Paraventricular hypothalamic nucleus, descending division, dorsal parvicellular part;784;general;general
+447;255;76;62;Paraventricular hypothalamic nucleus, descending division, forniceal part;785;general;general
+455;255;76;62;Paraventricular hypothalamic nucleus, descending division, lateral parvicellular part;786;general;general
+464;255;76;62;Paraventricular hypothalamic nucleus, descending division, medial parvicellular part, ventral zone;787;general;general
+693;255;76;62;Ventromedial hypothalamic nucleus;788;general;general
+761;255;76;62;Ventromedial hypothalamic nucleus, anterior part;789;general;general
+769;255;76;62;Ventromedial hypothalamic nucleus, central part;790;general;general
+777;255;76;62;Ventromedial hypothalamic nucleus, dorsomedial part;791;general;general
+785;255;76;62;Ventromedial hypothalamic nucleus, ventrolateral part;792;general;general
+946;255;76;62;Posterior hypothalamic nucleus;793;general;general
+290;242;72;59;Hypothalamic lateral zone;794;general;general
+194;242;72;59;Lateral hypothalamic area;795;fibrous;fibrous
+226;242;72;59;Lateral preoptic area;796;fibrous;fibrous
+356;242;72;59;Preparasubthalamic nucleus;797;general;general
+364;242;72;59;Parasubthalamic nucleus;798;fibrous;general
+576073704;242;72;59;Perifornical nucleus;799;general;general
+173;242;72;59;Retrochiasmatic area;800;general;general
+470;242;72;59;Subthalamic nucleus;801;general;general
+614;242;72;59;Tuberal nucleus;802;general;general
+797;242;72;59;Zona incerta;803;general;general
+796;242;72;59;Dopaminergic A13 group;804;general;general
+804;242;72;59;Fields of Forel;805;general;general
+10671;242;72;59;Median eminence;806;general;general
+313;255;100;255;Midbrain;807;general;general
+339;255;122;255;Midbrain, sensory related;808;general;general
+302;255;122;255;Superior colliculus, sensory related;809;general;general
+851;255;122;255;Superior colliculus, optic layer;810;general;general
+842;255;122;255;Superior colliculus, superficial gray layer;811;general;general
+834;255;122;255;Superior colliculus, zonal layer;812;general;general
+4;255;122;255;Inferior colliculus;813;general;general
+811;255;122;255;Inferior colliculus, central nucleus;814;general;general
+820;255;122;255;Inferior colliculus, dorsal nucleus;815;general;general
+828;255;122;255;Inferior colliculus, external nucleus;816;general;general
+580;255;122;255;Nucleus of the brachium of the inferior colliculus;817;general;general
+271;255;122;255;Nucleus sagulum;818;general;general
+874;255;122;255;Parabigeminal nucleus;819;general;general
+460;255;122;255;Midbrain trigeminal nucleus;820;general;general
+599626923;255;122;255;Subcommissural organ;821;general;general
+323;255;144;255;Midbrain, motor related;822;general;general
+381;255;144;255;Substantia nigra, reticular part;823;fibrous;general
+749;255;144;255;Ventral tegmental area;824;general;heavily
+607344830;255;144;255;Paranigral nucleus;825;general;general
+246;255;144;255;Midbrain reticular nucleus, retrorubral area;826;fibrous;general
+128;255;144;255;Midbrain reticular nucleus;827;general;general
+539;255;144;255;Midbrain reticular nucleus, magnocellular part;828;general;general
+548;255;144;255;Midbrain reticular nucleus, magnocellular part, general;829;general;general
+555;255;144;255;Midbrain reticular nucleus, parvicellular part;830;general;general
+294;255;144;255;Superior colliculus, motor related;831;general;general
+26;255;144;255;Superior colliculus, motor related, deep gray layer;832;general;general
+42;255;144;255;Superior colliculus, motor related, deep white layer;833;general;general
+17;255;144;255;Superior colliculus, motor related, intermediate white layer;834;general;general
+10;255;144;255;Superior colliculus, motor related, intermediate gray layer;835;general;general
+494;255;144;255;Superior colliculus, motor related, intermediate gray layer, sublayer a;836;general;general
+503;255;144;255;Superior colliculus, motor related, intermediate gray layer, sublayer b;837;general;general
+511;255;144;255;Superior colliculus, motor related, intermediate gray layer, sublayer c;838;general;general
+795;255;144;255;Periaqueductal gray;839;general;general
+50;255;144;255;Precommissural nucleus;840;general;general
+67;255;144;255;Interstitial nucleus of Cajal;841;general;general
+587;255;144;255;Nucleus of Darkschewitsch;842;general;general
+614454277;255;144;255;Supraoculomotor periaqueductal gray;843;general;general
+1100;255;144;255;Pretectal region;844;general;general
+215;255;144;255;Anterior pretectal nucleus;845;general;general
+531;255;144;255;Medial pretectal area;846;general;general
+628;255;144;255;Nucleus of the optic tract;847;general;general
+634;255;144;255;Nucleus of the posterior commissure;848;general;general
+706;255;144;255;Olivary pretectal nucleus;849;general;heavily
+1061;255;144;255;Posterior pretectal nucleus;850;general;general
+549009203;255;144;255;Retroparafascicular nucleus;851;general;general
+549009207;255;144;255;Intercollicular nucleus;852;general;general
+616;255;144;255;Cuneiform nucleus;853;general;general
+214;255;144;255;Red nucleus;854;general;general
+35;255;144;255;Oculomotor nucleus;855;general;general
+549009211;255;144;255;Medial accesory oculomotor nucleus;856;general;general
+975;255;144;255;Edinger-Westphal nucleus;857;general;general
+115;255;144;255;Trochlear nucleus;858;general;general
+606826663;255;144;255;Paratrochlear nucleus;859;general;general
+757;255;144;255;Ventral tegmental nucleus;860;general;general
+231;255;144;255;Anterior tegmental nucleus;861;general;general
+66;255;144;255;Lateral terminal nucleus of the accessory optic tract;862;general;general
+75;255;144;255;Dorsal terminal nucleus of the accessory optic tract;863;general;general
+58;255;144;255;Medial terminal nucleus of the accessory optic tract;864;general;general
+615;255;144;255;Substantia nigra, lateral part;865;fibrous;general
+348;255;144;255;Midbrain, behavioral state related;866;general;general
+374;255;166;255;Substantia nigra, compact part;867;fibrous;general
+1052;255;166;255;Pedunculopontine nucleus;868;general;general
+165;255;166;255;Midbrain raphe nuclei;869;general;heavily
+12;255;166;255;Interfascicular nucleus raphe;870;general;heavily
+100;255;166;255;Interpeduncular nucleus;871;general;general
+607344834;255;166;255;Interpeduncular nucleus, rostral;872;general;general
+607344838;255;166;255;Interpeduncular nucleus, caudal;873;general;general
+607344842;255;166;255;Interpeduncular nucleus, apical;874;general;general
+607344846;255;166;255;Interpeduncular nucleus, lateral;875;general;general
+607344850;255;166;255;Interpeduncular nucleus, intermediate;876;general;general
+607344854;255;166;255;Interpeduncular nucleus, dorsomedial;877;general;general
+607344858;255;166;255;Interpeduncular nucleus, dorsolateral;878;general;general
+607344862;255;166;255;Interpeduncular nucleus, rostrolateral;879;general;general
+197;255;166;255;Rostral linear nucleus raphe;880;general;heavily
+591;255;166;255;Central linear nucleus raphe;881;general;heavily
+872;255;166;255;Dorsal nucleus raphe;882;general;heavily
+1065;255;155;136;Hindbrain;883;general;general
+771;255;155;136;Pons;884;general;general
+1132;255;174;111;Pons, sensory related;885;general;general
+612;255;174;111;Nucleus of the lateral lemniscus;886;general;general
+82;255;174;111;Nucleus of the lateral lemniscus, dorsal part;887;general;general
+90;255;174;111;Nucleus of the lateral lemniscus, horizontal part;888;general;general
+99;255;174;111;Nucleus of the lateral lemniscus, ventral part;889;general;general
+7;255;174;111;Principal sensory nucleus of the trigeminal;890;general;general
+867;255;174;111;Parabrachial nucleus;891;general;general
+123;255;174;111;Koelliker-Fuse subnucleus;892;general;general
+881;255;174;111;Parabrachial nucleus, lateral division;893;general;general
+860;255;174;111;Parabrachial nucleus, lateral division, central lateral part;894;general;general
+868;255;174;111;Parabrachial nucleus, lateral division, dorsal lateral part;895;general;general
+875;255;174;111;Parabrachial nucleus, lateral division, external lateral part;896;general;general
+883;255;174;111;Parabrachial nucleus, lateral division, superior lateral part;897;general;general
+891;255;174;111;Parabrachial nucleus, lateral division, ventral lateral part;898;general;general
+890;255;174;111;Parabrachial nucleus, medial division;899;general;general
+899;255;174;111;Parabrachial nucleus, medial division, external medial part;900;general;general
+915;255;174;111;Parabrachial nucleus, medial division, medial medial part;901;general;general
+923;255;174;111;Parabrachial nucleus, medial division, ventral medial part;902;general;general
+398;255;174;111;Superior olivary complex;903;general;general
+122;255;174;111;Superior olivary complex, periolivary region;904;general;general
+105;255;174;111;Superior olivary complex, medial part;905;general;general
+114;255;174;111;Superior olivary complex, lateral part;906;general;general
+987;255;186;134;Pons, motor related;907;general;general
+280;255;186;134;Barrington's nucleus;908;general;general
+880;255;186;134;Dorsal tegmental nucleus;909;general;general
+283;255;186;134;Lateral tegmental nucleus;910;general;general
+599626927;255;186;134;Posterodorsal tegmental nucleus;911;general;general
+898;255;186;134;Pontine central gray;912;general;general
+931;255;186;134;Pontine gray;913;general;general
+1093;255;186;134;Pontine reticular nucleus, caudal part;914;general;general
+552;255;186;134;Pontine reticular nucleus, ventral part;915;general;general
+318;255;186;134;Supragenual nucleus;916;general;general
+462;255;186;134;Superior salivatory nucleus;917;general;general
+534;255;186;134;Supratrigeminal nucleus;918;general;general
+574;255;186;134;Tegmental reticular nucleus;919;general;general
+621;255;186;134;Motor nucleus of trigeminal;920;general;general
+549009215;255;186;134;Peritrigeminal zone;921;general;general
+549009219;255;186;134;Accessory trigeminal nucleus;922;general;general
+549009223;255;186;134;Parvicellular motor 5 nucleus;923;general;general
+549009227;255;186;134;Intertrigeminal nucleus;924;general;general
+1117;255;195;149;Pons, behavioral state related;925;general;general
+679;255;195;149;Superior central nucleus raphe;926;general;general
+137;255;195;149;Superior central nucleus raphe, lateral part;927;general;general
+130;255;195;149;Superior central nucleus raphe, medial part;928;general;general
+147;255;195;149;Locus ceruleus;929;general;general
+162;255;195;149;Laterodorsal tegmental nucleus;930;general;general
+604;255;195;149;Nucleus incertus;931;general;general
+146;255;195;149;Pontine reticular nucleus;932;general;general
+238;255;195;149;Nucleus raphe pontis;933;general;general
+350;255;195;149;Subceruleus nucleus;934;general;general
+358;255;195;149;Sublaterodorsal nucleus;935;general;general
+354;255;155;205;Medulla;936;general;general
+386;255;165;210;Medulla, sensory related;937;general;general
+207;255;165;210;Area postrema;938;general;general
+607;255;165;210;Cochlear nuclei;939;general;general
+112;255;165;210;Granular lamina of the cochlear nuclei;940;general;general
+560;255;165;210;Cochlear nucleus, subpedunclular granular region;941;general;general
+96;255;165;210;Dorsal cochlear nucleus;942;general;general
+101;255;165;210;Ventral cochlear nucleus;943;general;general
+720;255;165;210;Dorsal column nuclei;944;general;general
+711;255;165;210;Cuneate nucleus;945;general;general
+1039;255;165;210;Gracile nucleus;946;general;general
+903;255;165;210;External cuneate nucleus;947;general;general
+642;255;165;210;Nucleus of the trapezoid body;948;general;general
+651;255;165;210;Nucleus of the solitary tract;949;general;general
+659;255;165;210;Nucleus of the solitary tract, central part;950;general;general
+666;255;165;210;Nucleus of the solitary tract, commissural part;951;general;general
+674;255;165;210;Nucleus of the solitary tract, gelatinous part;952;general;general
+682;255;165;210;Nucleus of the solitary tract, lateral part;953;general;general
+691;255;165;210;Nucleus of the solitary tract, medial part;954;general;general
+429;255;165;210;Spinal nucleus of the trigeminal, caudal part;955;general;general
+437;255;165;210;Spinal nucleus of the trigeminal, interpolar part;956;general;general
+445;255;165;210;Spinal nucleus of the trigeminal, oral part;957;general;general
+77;255;165;210;Spinal nucleus of the trigeminal, oral part, caudal dorsomedial part;958;general;general
+53;255;165;210;Spinal nucleus of the trigeminal, oral part, middle dorsomedial part, dorsal zone;959;general;general
+61;255;165;210;Spinal nucleus of the trigeminal, oral part, middle dorsomedial part, ventral zone;960;general;general
+45;255;165;210;Spinal nucleus of the trigeminal, oral part, rostral dorsomedial part;961;general;general
+69;255;165;210;Spinal nucleus of the trigeminal, oral part, ventrolateral part;962;general;general
+589508451;255;165;210;Paratrigeminal nucleus;963;general;general
+789;255;165;210;Nucleus z;964;general;general
+370;255;179;217;Medulla, motor related;965;general;general
+653;255;179;217;Abducens nucleus;966;general;general
+568;255;179;217;Accessory abducens nucleus;967;general;general
+661;255;179;217;Facial motor nucleus;968;general;general
+576;255;179;217;Accessory facial motor nucleus;969;general;general
+640;255;179;217;Efferent vestibular nucleus;970;general;general
+135;255;179;217;Nucleus ambiguus;971;general;general
+939;255;179;217;Nucleus ambiguus, dorsal division;972;general;general
+143;255;179;217;Nucleus ambiguus, ventral division;973;general;general
+839;255;179;217;Dorsal motor nucleus of the vagus nerve;974;general;general
+887;255;179;217;Efferent cochlear group;975;general;general
+1048;255;179;217;Gigantocellular reticular nucleus;976;general;general
+372;255;179;217;Infracerebellar nucleus;977;general;general
+83;255;179;217;Inferior olivary complex;978;general;general
+136;255;179;217;Intermediate reticular nucleus;979;general;general
+106;255;179;217;Inferior salivatory nucleus;980;general;general
+203;255;179;217;Linear nucleus of the medulla;981;general;general
+235;255;179;217;Lateral reticular nucleus;982;general;general
+955;255;179;217;Lateral reticular nucleus, magnocellular part;983;general;general
+963;255;179;217;Lateral reticular nucleus, parvicellular part;984;general;general
+307;255;179;217;Magnocellular reticular nucleus;985;general;general
+395;255;179;217;Medullary reticular nucleus;986;general;general
+1098;255;179;217;Medullary reticular nucleus, dorsal part;987;general;general
+1107;255;179;217;Medullary reticular nucleus, ventral part;988;general;general
+852;255;179;217;Parvicellular reticular nucleus;989;general;general
+859;255;179;217;Parasolitary nucleus;990;general;general
+938;255;179;217;Paragigantocellular reticular nucleus;991;general;general
+970;255;179;217;Paragigantocellular reticular nucleus, dorsal part;992;general;general
+978;255;179;217;Paragigantocellular reticular nucleus, lateral part;993;general;general
+154;255;179;217;Perihypoglossal nuclei;994;general;general
+161;255;179;217;Nucleus intercalatus;995;general;general
+177;255;179;217;Nucleus of Roller;996;general;general
+169;255;179;217;Nucleus prepositus;997;general;general
+995;255;179;217;Paramedian reticular nucleus;998;general;general
+1069;255;179;217;Parapyramidal nucleus;999;general;general
+185;255;179;217;Parapyramidal nucleus, deep part;1000;general;general
+193;255;179;217;Parapyramidal nucleus, superficial part;1001;general;general
+701;255;179;217;Vestibular nuclei;1002;general;general
+209;255;179;217;Lateral vestibular nucleus;1003;general;general
+202;255;179;217;Medial vestibular nucleus;1004;general;general
+225;255;179;217;Spinal vestibular nucleus;1005;general;general
+217;255;179;217;Superior vestibular nucleus;1006;general;general
+765;255;179;217;Nucleus x;1007;general;general
+773;255;179;217;Hypoglossal nucleus;1008;general;general
+781;255;179;217;Nucleus y;1009;general;general
+76;255;179;217;Interstitial nucleus of the vestibular nerve;1010;general;general
+379;255;198;226;Medulla, behavioral state related;1011;general;general
+206;255;198;226;Nucleus raphe magnus;1012;general;general
+230;255;198;226;Nucleus raphe pallidus;1013;general;general
+222;255;198;226;Nucleus raphe obscurus;1014;general;general
+512;240;240;128;Cerebellum;1015;general;general
+528;240;240;128;Cerebellar cortex;1016;general;general
+1144;255;252;145;Cerebellar cortex, molecular layer;1017;general;general
+1145;255;252;145;Cerebellar cortex, Purkinje layer;1018;general;general
+1143;236;231;84;Cerebellar cortex, granular layer;1019;general;general
+645;255;252;145;Vermal regions;1020;general;general
+912;255;252;145;Lingula (I);1021;general;general
+10707;255;252;145;Lingula (I), molecular layer;1022;general;general
+10706;255;252;145;Lingula (I), Purkinje layer;1023;general;general
+10705;236;231;84;Lingula (I), granular layer;1024;general;general
+920;255;252;145;Central lobule;1025;general;general
+976;255;252;145;Lobule II;1026;general;general
+10710;255;252;145;Lobule II, molecular layer;1027;general;general
+10709;255;252;145;Lobule II, Purkinje layer;1028;general;general
+10708;236;231;84;Lobule II, granular layer;1029;general;general
+984;255;252;145;Lobule III;1030;general;general
+10713;255;252;145;Lobule III, molecular layer;1031;general;general
+10712;255;252;145;Lobule III, Purkinje layer;1032;general;general
+10711;236;231;84;Lobule III, granular layer;1033;general;general
+928;255;252;145;Culmen;1034;general;general
+992;255;252;145;Lobule IV;1035;general;general
+10716;255;252;145;Lobule IV, molecular layer;1036;general;general
+10715;255;252;145;Lobule IV, Purkinje layer;1037;general;general
+10714;236;231;84;Lobule IV, granular layer;1038;general;general
+1001;255;252;145;Lobule V;1039;general;general
+10719;255;252;145;Lobule V, molecular layer;1040;general;general
+10718;255;252;145;Lobule V, Purkinje layer;1041;general;general
+10717;236;231;84;Lobule V, granular layer;1042;general;general
+1091;255;252;145;Lobules IV-V;1043;general;general
+10722;255;252;145;Lobules IV-V, molecular layer;1044;general;general
+10721;255;252;145;Lobules IV-V, Purkinje layer;1045;general;general
+10720;236;231;84;Lobules IV-V, granular layer;1046;general;general
+936;255;252;145;Declive (VI);1047;general;general
+10725;255;252;145;Declive (VI), molecular layer;1048;general;general
+10724;255;252;145;Declive (VI), Purkinje layer;1049;general;general
+10723;236;231;84;Declive (VI), granular layer;1050;general;general
+944;255;252;145;Folium-tuber vermis (VII);1051;general;general
+10728;255;252;145;Folium-tuber vermis (VII), molecular layer;1052;general;general
+10727;255;252;145;Folium-tuber vermis (VII), Purkinje layer;1053;general;general
+10726;236;231;84;Folium-tuber vermis (VII), granular layer;1054;general;general
+951;255;252;145;Pyramus (VIII);1055;general;general
+10731;255;252;145;Pyramus (VIII), molecular layer;1056;general;general
+10730;255;252;145;Pyramus (VIII), Purkinje layer;1057;general;general
+10729;236;231;84;Pyramus (VIII), granular layer;1058;general;general
+957;255;252;145;Uvula (IX);1059;general;general
+10734;255;252;145;Uvula (IX), molecular layer;1060;general;general
+10733;255;252;145;Uvula (IX), Purkinje layer;1061;general;general
+10732;236;231;84;Uvula (IX), granular layer;1062;general;general
+968;255;252;145;Nodulus (X);1063;general;general
+10737;255;252;145;Nodulus (X), molecular layer;1064;general;general
+10736;255;252;145;Nodulus (X), Purkinje layer;1065;general;general
+10735;236;231;84;Nodulus (X), granular layer;1066;general;general
+1073;255;252;145;Hemispheric regions;1067;general;general
+1007;255;252;145;Simple lobule;1068;general;general
+10674;255;252;145;Simple lobule, molecular layer;1069;general;general
+10673;255;252;145;Simple lobule, Purkinje layer;1070;general;general
+10672;236;231;84;Simple lobule, granular layer;1071;general;general
+1017;255;252;145;Ansiform lobule;1072;general;general
+1056;255;252;145;Crus 1;1073;general;general
+10677;255;252;145;Crus 1, molecular layer;1074;general;general
+10676;255;252;145;Crus 1, Purkinje layer;1075;general;general
+10675;236;231;84;Crus 1, granular layer;1076;general;general
+1064;255;252;145;Crus 2;1077;general;general
+10680;255;252;145;Crus 2, molecular layer;1078;general;general
+10679;255;252;145;Crus 2, Purkinje layer;1079;general;general
+10678;236;231;84;Crus 2, granular layer;1080;general;general
+1025;255;252;145;Paramedian lobule;1081;general;general
+10683;255;252;145;Paramedian lobule, molecular layer;1082;general;general
+10682;255;252;145;Paramedian lobule, Purkinje layer;1083;general;general
+10681;236;231;84;Paramedian lobule, granular layer;1084;general;general
+1033;255;252;145;Copula pyramidis;1085;general;general
+10686;255;252;145;Copula pyramidis, molecular layer;1086;general;general
+10685;255;252;145;Copula pyramidis, Purkinje layer;1087;general;general
+10684;236;231;84;Copula pyramidis, granular layer;1088;general;general
+1041;255;252;145;Paraflocculus;1089;general;general
+10689;255;252;145;Paraflocculus, molecular layer;1090;general;general
+10688;255;252;145;Paraflocculus, Purkinje layer;1091;general;general
+10687;236;231;84;Paraflocculus, granular layer;1092;general;general
+1049;255;252;145;Flocculus;1093;general;general
+10692;255;252;145;Flocculus, molecular layer;1094;general;general
+10691;255;252;145;Flocculus, Purkinje layer;1095;general;general
+10690;236;231;84;Flocculus, granular layer;1096;general;general
+519;240;240;128;Cerebellar nuclei;1097;general;general
+989;255;253;188;Fastigial nucleus;1098;general;general
+91;255;253;188;Interposed nucleus;1099;general;general
+846;255;253;188;Dentate nucleus;1100;general;general
+589508455;255;253;188;Vestibulocerebellar nucleus;1101;general;general
+1009;204;204;204;fiber tracts;1102;fibrous;fibrous
+967;204;204;204;cranial nerves;1103;fibrous;fibrous
+885;204;204;204;terminal nerve;1104;fibrous;fibrous
+949;204;204;204;vomeronasal nerve;1105;fibrous;fibrous
+840;204;204;204;olfactory nerve;1106;fibrous;fibrous
+1016;204;204;204;olfactory nerve layer of main olfactory bulb;1107;fibrous;fibrous
+21;204;204;204;lateral olfactory tract, general;1108;fibrous;fibrous
+665;204;204;204;lateral olfactory tract, body;1109;fibrous;fibrous
+538;204;204;204;dorsal limb;1110;fibrous;fibrous
+459;204;204;204;accessory olfactory tract;1111;fibrous;fibrous
+900;204;204;204;anterior commissure, olfactory limb;1112;fibrous;fibrous
+848;204;204;204;optic nerve;1113;fibrous;fibrous
+876;204;204;204;accessory optic tract;1114;fibrous;fibrous
+916;204;204;204;brachium of the superior colliculus;1115;fibrous;fibrous
+336;204;204;204;superior colliculus commissure;1116;fibrous;fibrous
+117;204;204;204;optic chiasm;1117;fibrous;fibrous
+125;204;204;204;optic tract;1118;fibrous;fibrous
+357;204;204;204;tectothalamic pathway;1119;fibrous;fibrous
+832;204;204;204;oculomotor nerve;1120;fibrous;fibrous
+62;204;204;204;medial longitudinal fascicle;1121;fibrous;fibrous
+158;204;204;204;posterior commissure;1122;fibrous;fibrous
+911;204;204;204;trochlear nerve;1123;fibrous;fibrous
+384;204;204;204;trochlear nerve decussation;1124;fibrous;fibrous
+710;204;204;204;abducens nerve;1125;fibrous;fibrous
+901;204;204;204;trigeminal nerve;1126;fibrous;fibrous
+93;204;204;204;motor root of the trigeminal nerve;1127;fibrous;fibrous
+229;204;204;204;sensory root of the trigeminal nerve;1128;fibrous;fibrous
+705;204;204;204;midbrain tract of the trigeminal nerve;1129;fibrous;fibrous
+794;204;204;204;spinal tract of the trigeminal nerve;1130;fibrous;fibrous
+798;204;204;204;facial nerve;1131;fibrous;fibrous
+1131;204;204;204;intermediate nerve;1132;fibrous;fibrous
+1116;204;204;204;genu of the facial nerve;1133;fibrous;fibrous
+933;204;204;204;vestibulocochlear nerve;1134;fibrous;fibrous
+1076;204;204;204;efferent cochleovestibular bundle;1135;fibrous;fibrous
+413;204;204;204;vestibular nerve;1136;fibrous;fibrous
+948;204;204;204;cochlear nerve;1137;fibrous;fibrous
+841;204;204;204;trapezoid body;1138;fibrous;fibrous
+641;204;204;204;intermediate acoustic stria;1139;fibrous;fibrous
+506;204;204;204;dorsal acoustic stria;1140;fibrous;fibrous
+658;204;204;204;lateral lemniscus;1141;fibrous;fibrous
+633;204;204;204;inferior colliculus commissure;1142;fibrous;fibrous
+482;204;204;204;brachium of the inferior colliculus;1143;fibrous;fibrous
+808;204;204;204;glossopharyngeal nerve;1144;fibrous;fibrous
+917;204;204;204;vagus nerve;1145;fibrous;fibrous
+237;204;204;204;solitary tract;1146;fibrous;fibrous
+717;204;204;204;accessory spinal nerve;1147;fibrous;fibrous
+813;204;204;204;hypoglossal nerve;1148;fibrous;fibrous
+925;204;204;204;ventral roots;1149;fibrous;fibrous
+792;204;204;204;dorsal roots;1150;fibrous;fibrous
+932;204;204;204;cervicothalamic tract;1151;fibrous;fibrous
+570;204;204;204;dorsolateral fascicle;1152;fibrous;fibrous
+522;204;204;204;dorsal commissure of the spinal cord;1153;fibrous;fibrous
+858;204;204;204;ventral commissure of the spinal cord;1154;fibrous;fibrous
+586;204;204;204;fasciculus proprius;1155;fibrous;fibrous
+514;204;204;204;dorsal column;1156;fibrous;fibrous
+380;204;204;204;cuneate fascicle;1157;fibrous;fibrous
+388;204;204;204;gracile fascicle;1158;fibrous;fibrous
+396;204;204;204;internal arcuate fibers;1159;fibrous;fibrous
+697;204;204;204;medial lemniscus;1160;fibrous;fibrous
+871;204;204;204;spinothalamic tract;1161;fibrous;fibrous
+29;204;204;204;lateral spinothalamic tract;1162;fibrous;fibrous
+389;204;204;204;ventral spinothalamic tract;1163;fibrous;fibrous
+245;204;204;204;spinocervical tract;1164;fibrous;fibrous
+261;204;204;204;spino-olivary pathway;1165;fibrous;fibrous
+270;204;204;204;spinoreticular pathway;1166;fibrous;fibrous
+293;204;204;204;spinovestibular pathway;1167;fibrous;fibrous
+277;204;204;204;spinotectal pathway;1168;fibrous;fibrous
+253;204;204;204;spinohypothalamic pathway;1169;fibrous;fibrous
+285;204;204;204;spinotelenchephalic pathway;1170;fibrous;fibrous
+627;204;204;204;hypothalamohypophysial tract;1171;fibrous;fibrous
+960;204;204;204;cerebellum related fiber tracts;1172;fibrous;fibrous
+744;204;204;204;cerebellar commissure;1173;fibrous;fibrous
+752;204;204;204;cerebellar peduncles;1174;fibrous;fibrous
+326;204;204;204;superior cerebelar peduncles;1175;fibrous;fibrous
+812;204;204;204;superior cerebellar peduncle decussation;1176;fibrous;fibrous
+85;204;204;204;spinocerebellar tract;1177;fibrous;fibrous
+850;204;204;204;uncinate fascicle;1178;fibrous;fibrous
+866;204;204;204;ventral spinocerebellar tract;1179;fibrous;fibrous
+78;204;204;204;middle cerebellar peduncle;1180;fibrous;fibrous
+1123;204;204;204;inferior cerebellar peduncle;1181;fibrous;fibrous
+553;204;204;204;dorsal spinocerebellar tract;1182;fibrous;fibrous
+499;204;204;204;cuneocerebellar tract;1183;fibrous;fibrous
+650;204;204;204;juxtarestiform body;1184;fibrous;fibrous
+490;204;204;204;bulbocerebellar tract;1185;fibrous;fibrous
+404;204;204;204;olivocerebellar tract;1186;fibrous;fibrous
+410;204;204;204;reticulocerebellar tract;1187;fibrous;fibrous
+373;204;204;204;trigeminocerebellar tract;1188;fibrous;fibrous
+728;204;204;204;arbor vitae;1189;fibrous;fibrous
+484682512;204;204;204;supra-callosal cerebral white matter;1190;fibrous;fibrous
+983;204;204;204;lateral forebrain bundle system;1191;fibrous;fibrous
+776;204;204;204;corpus callosum;1192;fibrous;fibrous
+956;204;204;204;corpus callosum, anterior forceps;1193;fibrous;fibrous
+579;204;204;204;external capsule;1194;fibrous;fibrous
+964;204;204;204;corpus callosum, extreme capsule;1195;fibrous;fibrous
+1108;204;204;204;genu of corpus callosum;1196;fibrous;fibrous
+971;204;204;204;corpus callosum, posterior forceps;1197;fibrous;fibrous
+979;204;204;204;corpus callosum, rostrum;1198;fibrous;fibrous
+484682516;204;204;204;corpus callosum, body;1199;fibrous;fibrous
+986;204;204;204;corpus callosum, splenium;1200;fibrous;fibrous
+784;204;204;204;corticospinal tract;1201;fibrous;fibrous
+6;204;204;204;internal capsule;1202;fibrous;fibrous
+924;204;204;204;cerebal peduncle;1203;fibrous;fibrous
+1036;204;204;204;corticotectal tract;1204;fibrous;fibrous
+1012;204;204;204;corticorubral tract;1205;fibrous;fibrous
+1003;204;204;204;corticopontine tract;1206;fibrous;fibrous
+994;204;204;204;corticobulbar tract;1207;fibrous;fibrous
+190;204;204;204;pyramid;1208;fibrous;fibrous
+198;204;204;204;pyramidal decussation;1209;fibrous;fibrous
+1019;204;204;204;corticospinal tract, crossed;1210;fibrous;fibrous
+1028;204;204;204;corticospinal tract, uncrossed;1211;fibrous;fibrous
+896;204;204;204;thalamus related;1212;fibrous;fibrous
+1092;204;204;204;external medullary lamina of the thalamus;1213;fibrous;fibrous
+14;204;204;204;internal medullary lamina of the thalamus;1214;fibrous;fibrous
+86;204;204;204;middle thalamic commissure;1215;fibrous;fibrous
+365;204;204;204;thalamic peduncles;1216;fibrous;fibrous
+484682520;204;204;204;optic radiation;1217;fibrous;fibrous
+484682524;204;204;204;auditory radiation;1218;fibrous;fibrous
+1000;204;204;204;extrapyramidal fiber systems;1219;fibrous;fibrous
+760;204;204;204;cerebral nuclei related;1220;fibrous;fibrous
+142;204;204;204;pallidothalamic pathway;1221;fibrous;fibrous
+102;204;204;204;nigrostriatal tract;1222;fibrous;fibrous
+109;204;204;204;nigrothalamic fibers;1223;fibrous;fibrous
+134;204;204;204;pallidotegmental fascicle;1224;fibrous;fibrous
+309;204;204;204;striatonigral pathway;1225;fibrous;fibrous
+317;204;204;204;subthalamic fascicle;1226;fibrous;fibrous
+877;204;204;204;tectospinal pathway;1227;fibrous;fibrous
+1051;204;204;204;direct tectospinal pathway;1228;fibrous;fibrous
+1060;204;204;204;doral tegmental decussation;1229;fibrous;fibrous
+1043;204;204;204;crossed tectospinal pathway;1230;fibrous;fibrous
+863;204;204;204;rubrospinal tract;1231;fibrous;fibrous
+397;204;204;204;ventral tegmental decussation;1232;fibrous;fibrous
+221;204;204;204;rubroreticular tract;1233;fibrous;fibrous
+736;204;204;204;central tegmental bundle;1234;fibrous;fibrous
+855;204;204;204;retriculospinal tract;1235;fibrous;fibrous
+205;204;204;204;retriculospinal tract, lateral part;1236;fibrous;fibrous
+213;204;204;204;retriculospinal tract, medial part;1237;fibrous;fibrous
+941;204;204;204;vestibulospinal pathway;1238;fibrous;fibrous
+991;204;204;204;medial forebrain bundle system;1239;fibrous;fibrous
+768;204;204;204;cerebrum related;1240;fibrous;fibrous
+884;204;204;204;amygdalar capsule;1241;fibrous;fibrous
+892;204;204;204;ansa peduncularis;1242;fibrous;fibrous
+908;204;204;204;anterior commissure, temporal limb;1243;fibrous;fibrous
+940;204;204;204;cingulum bundle;1244;fibrous;fibrous
+1099;204;204;204;fornix system;1245;fibrous;fibrous
+466;204;204;204;alveus;1246;fibrous;fibrous
+530;204;204;204;dorsal fornix;1247;fibrous;fibrous
+603;204;204;204;fimbria;1248;fibrous;fibrous
+745;204;204;204;precommissural fornix, general;1249;fibrous;fibrous
+420;204;204;204;precommissural fornix diagonal band;1250;fibrous;fibrous
+737;204;204;204;postcommissural fornix;1251;fibrous;fibrous
+428;204;204;204;medial corticohypothalamic tract;1252;fibrous;fibrous
+436;204;204;204;columns of the fornix;1253;fibrous;fibrous
+618;204;204;204;hippocampal commissures;1254;fibrous;fibrous
+443;204;204;204;dorsal hippocampal commissure;1255;fibrous;fibrous
+449;204;204;204;ventral hippocampal commissure;1256;fibrous;fibrous
+713;204;204;204;perforant path;1257;fibrous;fibrous
+474;204;204;204;angular path;1258;fibrous;fibrous
+37;204;204;204;longitudinal association bundle;1259;fibrous;fibrous
+301;204;204;204;stria terminalis;1260;fibrous;fibrous
+484682528;204;204;204;commissural branch of stria terminalis;1261;fibrous;fibrous
+824;204;204;204;hypothalamus related;1262;fibrous;fibrous
+54;204;204;204;medial forebrain bundle;1263;fibrous;fibrous
+405;204;204;204;ventrolateral hypothalamic tract;1264;fibrous;fibrous
+174;204;204;204;preoptic commissure;1265;fibrous;fibrous
+349;204;204;204;supraoptic commissures;1266;fibrous;fibrous
+817;204;204;204;supraoptic commissures, anterior;1267;fibrous;fibrous
+825;204;204;204;supraoptic commissures, dorsal;1268;fibrous;fibrous
+833;204;204;204;supraoptic commissures, ventral;1269;fibrous;fibrous
+166;204;204;204;premammillary commissure;1270;fibrous;fibrous
+341;204;204;204;supramammillary decussation;1271;fibrous;fibrous
+182;204;204;204;propriohypothalamic pathways;1272;fibrous;fibrous
+762;204;204;204;propriohypothalamic pathways, dorsal;1273;fibrous;fibrous
+770;204;204;204;propriohypothalamic pathways, lateral;1274;fibrous;fibrous
+779;204;204;204;propriohypothalamic pathways, medial;1275;fibrous;fibrous
+787;204;204;204;propriohypothalamic pathways, ventral;1276;fibrous;fibrous
+150;204;204;204;periventricular bundle of the hypothalamus;1277;fibrous;fibrous
+46;204;204;204;mammillary related;1278;fibrous;fibrous
+753;204;204;204;principal mammillary tract;1279;fibrous;fibrous
+690;204;204;204;mammillothalamic tract;1280;fibrous;fibrous
+681;204;204;204;mammillotegmental tract;1281;fibrous;fibrous
+673;204;204;204;mammillary peduncle;1282;fibrous;fibrous
+1068;204;204;204;dorsal thalamus related;1283;fibrous;fibrous
+722;204;204;204;periventricular bundle of the thalamus;1284;fibrous;fibrous
+1083;204;204;204;epithalamus related;1285;fibrous;fibrous
+802;204;204;204;stria medullaris;1286;fibrous;fibrous
+595;204;204;204;fasciculus retroflexus;1287;fibrous;fibrous
+611;204;204;204;habenular commissure;1288;fibrous;fibrous
+730;204;204;204;pineal stalk;1289;fibrous;fibrous
+70;204;204;204;midbrain related;1290;fibrous;fibrous
+547;204;204;204;dorsal longitudinal fascicle;1291;fibrous;fibrous
+563;204;204;204;dorsal tegmental tract;1292;fibrous;fibrous
+73;170;170;170;ventricular systems;1293;fibrous;fibrous
+81;170;170;170;lateral ventricle;1294;fibrous;fibrous
+89;170;170;170;rhinocele;1295;fibrous;fibrous
+98;170;170;170;subependymal zone;1296;fibrous;fibrous
+108;170;170;170;choroid plexus;1297;fibrous;fibrous
+116;170;170;170;choroid fissure;1298;fibrous;fibrous
+124;170;170;170;interventricular foramen;1299;fibrous;fibrous
+129;170;170;170;third ventricle;1300;fibrous;fibrous
+140;170;170;170;cerebral aqueduct;1301;fibrous;fibrous
+145;170;170;170;fourth ventricle;1302;fibrous;fibrous
+153;170;170;170;lateral recess;1303;fibrous;fibrous
+164;170;170;170;central canal, spinal cord/medulla;1304;fibrous;fibrous
+1024;170;170;170;grooves;1305;fibrous;fibrous
+1032;170;170;170;grooves of the cerebral cortex;1306;fibrous;fibrous
+1055;170;170;170;endorhinal groove;1307;fibrous;fibrous
+1063;170;170;170;hippocampal fissure;1308;fibrous;fibrous
+1071;170;170;170;rhinal fissure;1309;fibrous;fibrous
+1078;170;170;170;rhinal incisure;1310;fibrous;fibrous
+1040;170;170;170;grooves of the cerebellar cortex;1311;fibrous;fibrous
+1087;170;170;170;precentral fissure;1312;fibrous;fibrous
+1095;170;170;170;preculminate fissure;1313;fibrous;fibrous
+1103;170;170;170;primary fissure;1314;fibrous;fibrous
+1112;170;170;170;posterior superior fissure;1315;fibrous;fibrous
+1119;170;170;170;prepyramidal fissure;1316;fibrous;fibrous
+3;170;170;170;secondary fissure;1317;fibrous;fibrous
+11;170;170;170;posterolateral fissure;1318;fibrous;fibrous
+18;170;170;170;nodular fissure;1319;fibrous;fibrous
+25;170;170;170;simple fissure;1320;fibrous;fibrous
+34;170;170;170;intercrural fissure;1321;fibrous;fibrous
+43;170;170;170;ansoparamedian fissure;1322;fibrous;fibrous
+49;170;170;170;intraparafloccular fissure;1323;fibrous;fibrous
+57;170;170;170;paramedian sulcus;1324;fibrous;fibrous
+65;170;170;170;parafloccular sulcus;1325;fibrous;fibrous
+624;170;170;170;Interpeduncular fossa;1326;fibrous;fibrous
+304325711;127;46;126;retina;1327;general;general
