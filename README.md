@@ -5,7 +5,7 @@ This repository contains all the code used for the DOPAMAP project (Bjerke et al
 
 
 
-**The following scripts are included:**
+**The following scripts are included (in the "scripts" folder):**
 
 - ***compile_segmentations:*** Used to combine results from the three ilastik segmentation algorithms used, depending on region of interest, and overlaying the combined segmentations with damage masks that cover and effectively excluded damaged regions from the nutil analysis.
 
@@ -23,4 +23,9 @@ This repository contains all the code used for the DOPAMAP project (Bjerke et al
 
 - ***DOPAMAP_graphing:*** Used to graph data for figures. The functions used for this can be found in the [nutil scripts repository](https://github.com/ingvildeb/nutil_scripts).
 
+
+**The following files are included (in the "files" folder):**
+
+- ***allen2nut:*** .csv file containing needed to run the "compile_segmentations" script for P49 and P70 data
+- ***newmaster2nut:*** .csv file containing needed to run the "compile_segmentations" script for P17, P25 and P35 data
 
