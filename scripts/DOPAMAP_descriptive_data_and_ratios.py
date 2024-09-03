@@ -231,6 +231,84 @@ with pd.ExcelWriter('sex-specific_d1-d2_ratios.xlsx') as writer:
 
 
 
+# INDIVIDUAL VALUES FOR D1:D2 RELATIVE PROPORTION
+
+
+list_of_individual_ratios = []
+for i, j in D1R_hierarchical_densities.iterrows():
+    age = j["age"]
+    sex = j["sex"]
+    ID = j["ID"]
+    D2_values = D2R_hier_grouped_means.loc[age,sex]
+    D1_values = j[3:]
+
+    relative_ratio = ((D1_values-D2_values) / (D1_values+D2_values))
+    df = pd.DataFrame(relative_ratio)
+    df.columns=[ID]
+    df = df.transpose()
+    list_of_individual_ratios.append(df)
+
+relative_ratio_df = pd.concat(list_of_individual_ratios)
+relative_ratio_df.index.name = 'ID'
+relative_ratio_df = relative_ratio_df.reset_index()
+relative_ratio_df.insert(1, "age", D1R_hierarchical_densities["age"])
+relative_ratio_df.insert(2, "sex", D1R_hierarchical_densities["sex"], True)
+
+
+list_of_individual_D2_ratios = []
+for i, j in D2R_hierarchical_densities.iterrows():
+    age = j["age"]
+    sex = j["sex"]
+    ID = j["ID"]
+    D2_means = D2R_hier_grouped_means.loc[age,sex]
+    D2_values = j[3:]
+
+    relative_D2_ratio = ((D2_values-D2_means) / (D2_values+D2_means))
+    df_D2 = pd.DataFrame(relative_D2_ratio)
+    df_D2.columns=[ID]
+    df_D2 = df_D2.transpose()
+    list_of_individual_D2_ratios.append(df_D2)
+
+relative_ratio_D2_df = pd.concat(list_of_individual_D2_ratios)
+relative_ratio_D2_df.index.name = 'ID'
+relative_ratio_D2_df = relative_ratio_D2_df.reset_index()
+relative_ratio_D2_df.insert(1, "age", D2R_hierarchical_densities["age"])
+relative_ratio_D2_df.insert(2, "sex", D2R_hierarchical_densities["sex"], True)
+
+with pd.ExcelWriter('individual-relative-proportions.xlsx') as writer:
+    relative_ratio_df.to_excel(writer, sheet_name='d1_d2_proportions')
+    relative_ratio_D2_df.to_excel(writer, sheet_name='d2_to_d2')
+
+
+# SEX SPECIFIC D1:D2 RELATIVE PROPORTION
+
+# male
+
+male_d1_d2_ratios_P17 = ngf.calculate_relative_expression(D1R_hier_m17_mean, D2R_hier_m17_mean, D1R_hier_m17_count, D2R_hier_m17_count)
+male_d1_d2_ratios_P25 = ngf.calculate_relative_expression(D1R_hier_m25_mean, D2R_hier_m25_mean, D1R_hier_m25_count, D2R_hier_m25_count)
+male_d1_d2_ratios_P35 = ngf.calculate_relative_expression(D1R_hier_m35_mean, D2R_hier_m35_mean, D1R_hier_m35_count, D2R_hier_m35_count)
+male_d1_d2_ratios_P49 = ngf.calculate_relative_expression(D1R_hier_m49_mean, D2R_hier_m49_mean, D1R_hier_m49_count, D2R_hier_m49_count)
+male_d1_d2_ratios_P70 = ngf.calculate_relative_expression(D1R_hier_m70_mean, D2R_hier_m70_mean, D1R_hier_m70_count, D2R_hier_m70_count)
+
+male_d1_d2_ratios = pd.concat([male_d1_d2_ratios_P17, male_d1_d2_ratios_P25, male_d1_d2_ratios_P35, male_d1_d2_ratios_P49, male_d1_d2_ratios_P70], axis = 1)
+male_d1_d2_ratios.columns = [ages]
+
+
+# female
+
+female_d1_d2_ratios_P17 = ngf.calculate_relative_expression(D1R_hier_f17_mean, D2R_hier_f17_mean, D1R_hier_f17_count, D2R_hier_f17_count)
+female_d1_d2_ratios_P25 = ngf.calculate_relative_expression(D1R_hier_f25_mean, D2R_hier_f25_mean, D1R_hier_f25_count, D2R_hier_f25_count)
+female_d1_d2_ratios_P35 = ngf.calculate_relative_expression(D1R_hier_f35_mean, D2R_hier_f35_mean, D1R_hier_f35_count, D2R_hier_f35_count)
+female_d1_d2_ratios_P49 = ngf.calculate_relative_expression(D1R_hier_f49_mean, D2R_hier_f49_mean, D1R_hier_f49_count, D2R_hier_f49_count)
+female_d1_d2_ratios_P70 = ngf.calculate_relative_expression(D1R_hier_f70_mean, D2R_hier_f70_mean, D1R_hier_f70_count, D2R_hier_f70_count)
+
+female_d1_d2_ratios = pd.concat([female_d1_d2_ratios_P17, female_d1_d2_ratios_P25, female_d1_d2_ratios_P35, female_d1_d2_ratios_P49, female_d1_d2_ratios_P70], axis = 1)
+female_d1_d2_ratios.columns = [ages]
+
+
+with pd.ExcelWriter('sex-specific_d1-d2_relativeExpression.xlsx') as writer:
+    male_d1_d2_ratios.to_excel(writer, sheet_name='male_d1_d2_relativeExpression')
+    female_d1_d2_ratios.to_excel(writer, sheet_name='female_d1_d2_relativeExpression')
 
 
 
